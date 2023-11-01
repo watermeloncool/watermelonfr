@@ -13,7 +13,7 @@ a{color:white; text-decoration:none;}
 .titre{font-size:60px; font-size:4vw; font-weight:700; width: max-content;  animation: fadeinout 2.5s linear forwards;}
 @keyframes fadeinout {0% {opacity: 0;} 50% {opacity: 1;} 75% {opacity: 1;} 100% {opacity: 0;}}
 .soustitre{line-height: 155%; max-width:505px; margin-top:30px; }
-#btn{font-size:16px; font-weight:500; display:inline-block; margin-top:40px; padding:13px 20px; background:rgb(20,20,20); border: solid 1px rgb(100,100,100); border-radius:12px;}
+#btn{/*font-size:16px;*/ font-weight:500; display:inline-block; margin-top:40px; padding:13px 20px; background:rgb(20,20,20); border: solid 1px rgb(100,100,100); border-radius:12px;}
 #btn:hover{background:rgb(25,25,25);}
 
 #image{display:inline-block;vertical-align:top; position:absolute; left:55%; top:110px; top:16vh;  width:35%; /*animation: myfloat 3s; filter: drop-shadow(0px 0px 50px rgba(0,0,0,0.1));*/}
