@@ -11,7 +11,7 @@ a{color:white; text-decoration:none;}
 .hover:hover{background:#56575b;}*/
 
 #logo{width:30px; margin:25px; position:absolute; }
-#top{padding-top:29px; margin-left:65px; font-weight:500; }
+#top{padding-top:29px; margin-left:65px; font-weight:700; }
 
 #introtexte{width:35%; margin:17vh 0 0 10%; display:inline-block; }
 .titre{font-size:60px; font-size:4vw; font-weight:700; width: max-content;  animation: fadeinout 2.5s linear forwards; }
