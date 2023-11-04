@@ -21,7 +21,7 @@ a{color:white; text-decoration:none;}
 @keyframes fadeinout {0% {opacity: 0;} 50% {opacity: 1;} 75% {opacity: 1;} 100% {opacity: 0;}}
 .titre:first-of-type {display: block;}
 .soustitre{line-height: 155%; max-width:505px; margin-top:30px; color: var(--grey); }
-#btn{ font-weight:700; display:inline-block; margin-top:40px; padding:13px 20px; background:white; color:var(--dark); border-radius:10px;}
+#btn{ font-weight:700; display:inline-block; margin-top:40px; padding:13px 20px; background:white; color:var(--dark); border-radius:12px;}
 #btn:hover{opacity:0.7;}
 
 #image{display:inline-block;vertical-align:top; position:absolute; left:55%; top:110px; top:16vh;  width:35%; }
