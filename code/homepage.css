@@ -1,4 +1,8 @@
-/* root ------------------------------------------------- */
+/* import police ----------------------------------------*/
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* variables ------------------------------------------------- */
 :root {
     --dark: rgb(25, 25, 27);
     --dark2: rgb(15, 15, 17);
@@ -6,9 +10,6 @@
   }
 
 /* reste ------------------------------------------------- */
-
-/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 body,html{ background: var(--dark) ; color:white; font-family:'Roboto', Helvetica, Arial, sans-serif; font-size:18px; font-weight:400; scroll-behavior: smooth; margin:0; padding:0;}
 a{color:white; text-decoration:none;}
 
