@@ -1,4 +1,4 @@
-/* import police ----------------------------------------*/
+/* import police (doit être au début) ------------------------- */
 /*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
@@ -9,10 +9,11 @@
     --grey: rgb(150, 150, 152);
   }
 
-/* reste ------------------------------------------------- */
+/* global ------------------------------------------------- */
 body,html{ background: var(--dark) ; color:white; font-family:'Roboto', Helvetica, Arial, sans-serif; font-size:18px; font-weight:400; scroll-behavior: smooth; margin:0; padding:0;}
 a{color:white; text-decoration:none;}
 
+/* header ------------------------------------------------- */
 #logo{width:30px; margin:25px; position:absolute; }
 #top{padding-top:29px; margin-left:65px; font-weight:500; }
 
@@ -26,25 +27,36 @@ a{color:white; text-decoration:none;}
 
 #image{display:inline-block;vertical-align:top; position:absolute; left:55%; top:110px; top:16vh;  width:35%; }
 
+/* corps --------------------------------------------------- */
 #corps{margin: 22vh 0 0 10%; width:700px; max-width:80%; /*margin-left:calc(50% - 350px);*/ }
 .titre2{font-size:28px; font-weight:700; margin-top:50px; padding:16px 0 0 0; line-height: 130%; }
 .texte{color: var(--grey); margin-top:20px; line-height: 155%; }
 li{line-height: 155%; color: var(--grey); }
 ul li b{color:white;}
-
 #reassurance{margin:80px 0 60px 50px; font-size:25px; font-weight:500; }
 #reassurance div{ margin:20px 0; }
 #reassurance img{width:30px; vertical-align:middle; margin-right:15px; }
 
-#contacturl{padding-top:30px;}
-#contact{  position:relative; display: inline-block; margin:30px 0 60px 0;  padding:50px 150px 50px 60px; background:var(--dark); border: solid 1px rgb(60,60,62); border-radius:25px;}
+/* contact ----------------------------------------------- */
+#contact{  margin-top:50px; padding: 50px 0 50px 10%; background:var(--dark);}
 #contact div{ margin:15px 0; }
-#contact img{width:30px; vertical-align:middle; margin-right:15px;}
-#contact .titre2{font-size:40px; padding:0; margin:0 0 40px 0;}
+#contact img{width:30px; vertical-align:middle; margin-right:20px;}
+#contact .titre2{font-size:50px; padding:0; margin:0 0 40px 0;}
+#contact .form{ display:none; cursor:pointer; }
 
-#bottom{padding:100px 0 40px 10%; font-size:16px; color:var(--grey);}
+/* formulaire de contact --------------------------------- */
+#form{  padding: 0 0 50px 10%; background:var(--dark);    }
+#form input, #form textarea{font-family:'Roboto', Helvetica, Arial, sans-serif; font-size:18px; font-weight:400; padding:15px; margin:0 10px 10px 0; border-radius:12px; border:0;}
+#form .nom, #form .prenom, #form .telephone, #form .email {width:320px;}
+#form .message {width:680px; height:200px; }
+#form #feedback {margin-top:20px; }
+#form .button{font-weight:700; padding:13px 20px; border-radius:12px; background:white; color: var(--dark); cursor:pointer; }
 
-@media screen and (max-width: 800px) { 
+/* bottom ------------------------------------------------ */
+#bottom{padding:50px 0 40px 10%; font-size:16px; color:var(--grey);}
+
+/* mobile ------------------------------------------------- */
+@media screen and (max-width: 900px) { 
 #introtexte{width:86%;margin:12vh 0 0 7%; display:block; text-align:center;}
 .titre{font-size:9vw;}
 .soustitre,#btn{margin-top:10%;}
@@ -54,8 +66,12 @@ ul li b{color:white;}
 #corps{width:86%;margin:0 0 0 7%; max-width:86%;}
 .titre2{font-size:25px;margin-top:7%;}
 #reassurance{margin-left:0%; font-size:21px;}
-#contact{padding:11% 11% 9% 11%;width:78%; display:block;}
-#contact .titre2{font-size:30px;}
+#contact{padding:7%;}
+#contact .titre2{font-size:35px;}
+#form{  padding: 0 0 50px 7%;    }
+#form input, #form textarea{padding:15px; margin:0 0 10px 0; }
+#form .nom, #form .prenom, #form .telephone, #form .email {width:86%;}
+#form .message {width:86%; height:200px; }
 #bottom{padding-left:7%;padding-top:55px;width:86%;text-align:center;}
 }
 

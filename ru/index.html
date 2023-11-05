@@ -46,7 +46,7 @@
 </div>
 
 <a href="#contacturl"><div id="btn">
-    Получить предложение
+    Встреча с экспертом
 </div></a>
 
 </div>
@@ -87,18 +87,30 @@
     <li><b>Найм персонала</b>, программа может искать кандидатов, анализировать резюме, проводить тесты...</li>
 </ul> 
 
-<div id="contacturl"></div>
+</div>
+
 <div id="contact">
-<div class="titre2">Получить предложение</div>
-    <div><img src="/img/phone.svg"> +41 79 291 87 21</div>
+<div class="titre2">Встреча с экспертом</div>
     <a href="mailto:klim@watermelon.cool"><div><img src="/img/mail.svg"> klim@watermelon.cool</div></a>
-    <a href="https://wa.me/41792918721"><div><img src="/img/whatsapp.svg"> WhatsApp</div></a>
-    <a href="https://telegram.me/watermelongram"><div><img src="/img/telegram.svg"> Telegram</div></a>
+    <div><img src="/img/phone.svg"> +41 79 291 87 21</div>
+    <div class="form"><img src="img/form.svg">Форма обратной связи</div>
+    <div><img src="img/calendar.svg">Запланировать встречу</div>
 </div>
 
 
+<div id="form">
+    <form id="monformulaire">
+        <input type="text" name="nom" class="nom" placeholder="Фамилия" required><input type="text" name="prenom" class="prenom" placeholder="Имя" required>
+        <br>
+        <input type="tel" name="telephone" class="telephone" placeholder="Телефон" required><input type="email" name="email" class="email" placeholder="Электронная почта" required>
+        <br>
+        <textarea name="message" class="message" placeholder="Сообщение" required></textarea>
+        <br>
+        <input type="submit" class="button" value="Отправить">
+    </form>
+    <div id="feedback" style="display:none;">Спасибо за ваш запрос! Ваше обращение обрабатывается, и наша команда ответит вам в кратчайшие сроки.</div>
+    </div>
 
-</div>
 
 <div id="bottom">© <span id="annee"></span> Watermelon Sàrl</div>
 
