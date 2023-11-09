@@ -90,31 +90,111 @@
 </div>
 
 <div id="contact">
-<div class="titre2">Встреча с экспертом</div>
-    <a href="mailto:klim@watermelon.cool"><div><img src="/img/mail.svg"> klim@watermelon.cool</div></a>
+<div class="titre1">Контакт</div>
+    <div><img src="/img/mail.svg"> klim@watermelon.cool</div>
     <div><img src="/img/phone.svg"> +41 79 291 87 21</div>
-    <div class="form"><img src="/img/form.svg">Форма обратной связи</div>
-    <div><img src="/img/calendar.svg">Запланировать встречу</div>
+</div>
+
+
+<div id="calendar">
+  <div class="titre1">Запланировать встречу</div>
+
+  <div><img src="/img/place.svg">Онлайн</div>
+  <div><img src="/img/time.svg">1 час</div>
+
+  <br>
+
+  <form id="formulairecalendrier">
+
+    <select id="jour" name="jour" required>
+    <option value="">Выбрать дату</option>
+    </select>
+
+    <select id="heure" name="heure" required>
+      <option value="">Выбрать время</option>
+      <option value="10:00">10:00</option>
+      <option value="11:00">11:00</option>
+      <option value="12:00">12:00</option>
+      <option value="13:00">13:00</option>
+      <option value="14:00">14:00</option>
+    </select>
+
+    <input type="text" name="prenom" class="prenom" placeholder="Имя" required>
+    <input type="text" name="nom" class="nom" placeholder="Фамилия" required>
+    <input type="text" name="entreprise" class="entreprise" placeholder="Компания" required>
+    <input type="tel" name="telephone" class="telephone" placeholder="Телефон" required>
+    <input type="email" name="email" class="email" placeholder="Электронная почта" required>
+
+  <input type="submit" class="btn" value="Подтвердить встречу">
+  </form>
+
+  <div class="feedback">Ваша заявка на встречу принята, скоро вы получите подтверждающее письмо.</div>
+  
 </div>
 
 
 <div id="form">
-    <form id="monformulaire">
-        <input type="text" name="nom" class="nom" placeholder="Фамилия" required><input type="text" name="prenom" class="prenom" placeholder="Имя" required>
+<div class="titre1">Форма обратной связи</div>
+    <form id="formulairedecontact">
+      <input type="text" name="prenom" class="prenom" placeholder="Имя" required><input type="text" name="nom" class="nom" placeholder="Фамилия" required>
         <br>
         <input type="tel" name="telephone" class="telephone" placeholder="Телефон" required><input type="email" name="email" class="email" placeholder="Электронная почта" required>
         <br>
         <textarea name="message" class="message" placeholder="Сообщение" required></textarea>
-        <br>
         <input type="submit" class="button" value="Отправить">
     </form>
-    <div id="feedback" style="display:none;">Спасибо за ваш запрос! Ваше обращение обрабатывается, и наша команда ответит вам в кратчайшие сроки.</div>
+    <div class="feedback">Ваше сообщение было получено, скоро вы получите ответ.</div>
     </div>
 
 
 <div id="bottom">© <span id="annee"></span> Watermelon Sàrl</div>
 
 <script src="/code/homepage.js"></script>
+
+<script>
+
+    /* programmer rdv - ajouter dates ----------------------------------------*/
+    function addDays(date, days) {
+      var result = new Date(date);
+      result.setDate(result.getDate() + days);
+      return result;
+    }
+    
+    function capitalize(text) {
+      return text.replace(/(?:^|\s)\S/g, function(a) { return a.toUpperCase(); });
+    }
+    
+    function formatDate(date) {
+      var options = { weekday: 'long', day: 'numeric', month: 'long' };
+      var dateString = date.toLocaleDateString('ru-RU', options);
+      return capitalize(dateString); // Capitalize chaque partie de la date
+    }
+    
+    function addNextDaysToSelect() {
+      var select = document.getElementById('jour');
+      var today = new Date();
+      var addedDays = 0;
+      var i = 1;
+    
+      // Continue jusqu'à ce que nous ayons ajouté 22 jours ouvrables
+      while (addedDays < 21) {
+        var nextDay = addDays(today, i);
+        var dayOfWeek = nextDay.getDay(); // 0 = dimanche, 1 = lundi, ..., 6 = samedi
+    
+        // Si ce n'est ni un samedi (6) ni un dimanche (0), on l'ajoute au select
+        if (dayOfWeek !== 0 && dayOfWeek !== 6) {
+          var dateStr = formatDate(nextDay);
+          var option = new Option(dateStr, dateStr); // Utilisez dateStr pour le texte et la valeur
+          select.options.add(option);
+          addedDays++; // Un jour ouvrable de plus est ajouté
+        }
+        i++; // Incrémente le compteur de jours total
+      }
+    }
+    
+    document.addEventListener('DOMContentLoaded', addNextDaysToSelect);
+    
+    </script>
 
 </body>
 </html>

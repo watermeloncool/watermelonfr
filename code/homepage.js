@@ -23,54 +23,82 @@ for(var j = 0; j < nombre; j++){ m = j*2500; montrer(j,m); }
 
 for(var j = 0; j < nombre; j++){ m = j*2500; montrer(j,m); }
 
-/* année ----------------------------------------------- */
+/* copyright année ------------------------------------------ */
 
 var date = new Date();
 var annee = date.getFullYear(); 
 document.getElementById("annee").innerHTML = annee;
 
 
+/* programmer un RDV ------------------------------ */
+
+document.getElementById('formulairecalendrier').addEventListener('submit', function(event) {
+  event.preventDefault(); // Empêche la soumission normale du formulaire.
+
+  var scriptURL = "https://script.google.com/macros/s/AKfycbyveDQeMJi7N0MwRY3lI4yd0z0fjrbrN-xWiVQ9qEJsaRxnrXe3PGJpjALHCtrMcgjUSA/exec";
+
+  fetch(scriptURL, {
+    method: 'POST',
+    mode: 'no-cors',
+    body: new FormData(this)
+  })
+  .finally(() => {
+    // Ce code s'exécutera quelle que soit l'issue de la requête fetch
+    document.querySelector('#calendar .feedback').style.display = 'block';
+  });
+});
+
+
 /* formulaire de contact ------------------------------ */
 
-document.getElementById('monformulaire').addEventListener('submit', function(event) {
-    event.preventDefault(); // Empêche la soumission normale du formulaire.
+document.getElementById('formulairedecontact').addEventListener('submit', function(event) {
+  event.preventDefault(); // Empêche la soumission normale du formulaire.
 
-    var scriptURL = "https://script.google.com/macros/s/AKfycbxMlS9sX55QlJWpKO34gfi7H9djKUTgCpSYbH88OdPhJH0n6pg1r8E3j15J3hOrF4qGCQ/exec";
+  var scriptURL = "https://script.google.com/macros/s/AKfycbwfBV-WbnLDkGJWVRTTiHiUpCx_CtF2bp7smFquOuBbyx4tjcjimh71Eev3oi3q-rhDRQ/exec";
 
-    fetch(scriptURL, {
-      method: 'POST',
-      mode: 'no-cors',
-      body: new FormData(this)
-    })
-    .finally(() => {
-      // Ce code s'exécutera quelle que soit l'issue de la requête fetch
-      document.getElementById('feedback').style.display = 'block';
-    });
+  fetch(scriptURL, {
+    method: 'POST',
+    mode: 'no-cors',
+    body: new FormData(this)
+  })
+  .finally(() => {
+    // Ce code s'exécutera quelle que soit l'issue de la requête fetch
+    document.querySelector('#form .feedback').style.display = 'block';
   });
+});
 
 
 
-/* clic sur #contact .form -----------------------------*/
-/*
-document.addEventListener('DOMContentLoaded', function() {
-    // Sélectionnez l'élément sur lequel vous voulez détecter le clic
-    var contactFormTrigger = document.querySelector('#contact .form');
-    
-    // Ajoutez un écouteur d'événements de clic à cet élément
-    contactFormTrigger.addEventListener('click', function(event) {
-      event.preventDefault(); // Empêcher le comportement par défaut si c'est un lien ou un bouton
-      
-      // Sélectionnez l'élément que vous souhaitez afficher
-      var formElement = document.getElementById('form');
-      
-      // Changez le style de cet élément pour le rendre visible
-      formElement.style.display = 'block';
-  
-      // Utilisez une courte temporisation avant de défiler pour s'assurer que le formulaire est visible
-      setTimeout(function() {
-        // Déclenche un défilement doux vers l'élément #contact
-        document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
-      }, 0); // La temporisation peut être très courte, ici elle est mise à 0 millisecondes
-    });
-  });
-  */
+
+/* récupérer heure du visiteur ---------------------------------- */
+// Créer un nouvel objet Date qui contient la date et l'heure actuelles
+let dateActuelle = new Date();
+
+// Fonction pour ajouter un zéro devant les nombres < 10
+function formatDeuxChiffres(i) {
+  return i < 10 ? '0' + i : i;
+}
+
+// Obtenir l'heure, les minutes et les secondes avec deux chiffres
+let heures = formatDeuxChiffres(dateActuelle.getHours());
+let minutes = formatDeuxChiffres(dateActuelle.getMinutes());
+let secondes = formatDeuxChiffres(dateActuelle.getSeconds());
+
+console.log("Heure actuelle:", heures + ":" + minutes + ":" + secondes);
+
+
+
+/* récupérer heure genève --------------------------------------- */
+// Créer un nouvel objet Date pour l'heure actuelle
+let dateGeneve = new Date();
+
+// Formatter cette date pour le fuseau horaire de Genève
+let heureGeneve = new Intl.DateTimeFormat('fr-CH', {
+  timeZone: 'Europe/Zurich',
+  hour: '2-digit',
+  minute: '2-digit',
+  second: '2-digit',
+  hour12: false // Utilisez true pour un format 12 heures avec AM/PM si désiré
+}).format(dateGeneve);
+
+console.log("Heure à Genève:", heureGeneve);

@@ -5,74 +5,87 @@
 /* variables ------------------------------------------------- */
 :root {
     --dark: rgb(25, 25, 27);
+    --dark1: rgb(20, 20, 22);
     --dark2: rgb(15, 15, 17);
     --grey: rgb(150, 150, 152);
+    --blue: rgb(0, 115, 255);
+    --green: rgb(120, 255, 210);
   }
 
 /* global ------------------------------------------------- */
 body,html{ background: var(--dark) ; color:white; font-family:'Roboto', Helvetica, Arial, sans-serif; font-size:18px; font-weight:400; scroll-behavior: smooth; margin:0; padding:0;}
 a{color:white; text-decoration:none;}
+.titre1{font-size:40px; font-weight:700; padding:0 0 30px 0; line-height: 130%; }
+.titre2{font-size:28px; font-weight:700; padding:66px 0 20px 0; line-height: 130%; }
+input, select, textarea { -webkit-appearance: none; -moz-appearance: none; appearance: none; border:0; margin:0; font-family:'Roboto', Helvetica, Arial, sans-serif; font-size:18px; padding:13px 20px; box-sizing: border-box; border-radius:12px; background:white; color: var(--dark); font-weight:400;}
+select {cursor:pointer;}
+::placeholder {color: var(--grey);}
+.btn{ font-weight:700; display:inline-block; padding:13px 20px; background:white; color:var(--dark); border-radius:12px; cursor:pointer;}
+.btn:hover{opacity:0.7;}
+.feedback{display:none; box-sizing: border-box; font-weight:500; padding:13px 20px; background:var(--green); color: var(--dark); border-radius:12px;}
 
 /* header ------------------------------------------------- */
-#logo{width:30px; margin:25px; position:absolute; }
-#top{padding-top:29px; margin-left:65px; font-weight:500; }
-
-#introtexte{width:35%; margin:17vh 0 0 10%; display:inline-block; }
+#logo{width:30px; padding:25px; position:absolute; }
+#top{padding-top:29px; padding-left:65px; font-weight:500; }
+#introtexte{width:35%; padding:17vh 0 0 10%; display:inline-block; }
 .titre{display:none; font-size:60px; font-size:4vw; font-weight:700; width: max-content;  animation: fadeinout 2.5s linear forwards; }
 @keyframes fadeinout {0% {opacity: 0;} 50% {opacity: 1;} 75% {opacity: 1;} 100% {opacity: 0;}}
 .titre:first-of-type {display: block;}
-.soustitre{line-height: 155%; max-width:505px; margin-top:30px; color: var(--grey); }
-#btn{ font-weight:700; display:inline-block; margin-top:40px; padding:13px 20px; background:white; color:var(--dark); border-radius:12px;}
-#btn:hover{opacity:0.7;}
-
+.soustitre{line-height: 155%; max-width:505px; padding-top:30px; padding-bottom:40px; color: var(--grey); }
 #image{display:inline-block;vertical-align:top; position:absolute; left:55%; top:110px; top:16vh;  width:35%; }
 
 /* corps --------------------------------------------------- */
-#corps{margin: 22vh 0 0 10%; width:700px; max-width:80%; /*margin-left:calc(50% - 350px);*/ }
-.titre2{font-size:28px; font-weight:700; margin-top:50px; padding:16px 0 0 0; line-height: 130%; }
-.texte{color: var(--grey); margin-top:20px; line-height: 155%; }
+#corps{padding: 22vh 0 0 10%; width:700px; max-width:80%; /*padding-left:calc(50% - 350px);*/ }
+.texte{color: var(--grey); line-height: 155%; }
 li{line-height: 155%; color: var(--grey); }
 ul li b{color:white;}
-#reassurance{margin:80px 0 60px 50px; font-size:25px; font-weight:500; }
-#reassurance div{ margin:20px 0; }
-#reassurance img{width:30px; vertical-align:middle; margin-right:15px; }
+ul {padding-top:0px; margin-top:0px; padding-bottom:50px;}
+
+/* reassurance --------------------------------------------- */
+#reassurance{padding:50px 0 0 50px; font-size:25px; font-weight:500; }
+#reassurance img{width:30px; vertical-align:middle; padding:10px 15px 10px 0;  }
 
 /* contact ----------------------------------------------- */
-#contact{  margin-top:50px; padding: 50px 0 50px 10%; background:var(--dark);}
-#contact div{ margin:15px 0; }
-#contact img{width:30px; vertical-align:middle; margin-right:20px;}
-#contact .titre2{font-size:50px; padding:0; margin:0 0 40px 0;}
-#contact .form{ display:none; cursor:pointer; }
+#contact{  padding: 50px 0 60px 10%; background:var(--dark); }
+#contact img{width:30px; vertical-align:middle; padding:5px 20px 5px 0;}
+
+/* calendrier --------------------------------------------- */
+#calendar{  padding: 50px 0 60px 10%; background:var(--dark1);  }
+#calendar img{width:30px; vertical-align:middle; padding:5px 20px 5px 0;}
+#calendar select, #calendar input {width:350px;display:block;margin-bottom:10px;}
+#calendar select { font-weight:600; border-right:solid 12px var(--grey);}
+#calendar .btn {font-weight:500; width:auto; background:var(--blue); color:white; }
+#calendar .feedback {width:350px; line-height: 155%;}
 
 /* formulaire de contact --------------------------------- */
-#form{  padding: 0 0 50px 10%; background:var(--dark);    }
-#form input, #form textarea{font-family:'Roboto', Helvetica, Arial, sans-serif; font-size:18px; font-weight:400; padding:15px; margin:0 10px 10px 0; border-radius:12px; border:0;}
-#form .nom, #form .prenom, #form .telephone, #form .email {width:320px;}
-#form .message {width:680px; height:200px; }
-#form #feedback {width:700px; margin-top:20px; line-height: 155%;}
-#form .button{font-weight:700; padding:13px 20px; border-radius:12px; background:white; color: var(--dark); cursor:pointer; }
+#form{  padding: 50px 0 60px 10%; }
+#form input, #form textarea { margin:0 10px 10px 0; }
+#form .prenom, #form .nom, #form .telephone, #form .email {width:345px;}
+#form .message {width:700px; height:200px; display:block;}
+#form .btn {font-weight:500; background:var(--blue); color:white;}
+#form .feedback {width:700px; line-height: 155%;}
 
 /* bottom ------------------------------------------------ */
 #bottom{padding:50px 0 40px 10%; font-size:16px; color:var(--grey);}
 
 /* mobile ------------------------------------------------- */
-@media screen and (max-width: 900px) { 
-#introtexte{width:86%;margin:12vh 0 0 7%; display:block; text-align:center;}
+@media screen and (max-width: 850px) { 
+#introtexte{width:86%;padding:12vh 0 0 7%; display:block; text-align:center;}
 .titre{font-size:9vw;}
-.soustitre,#btn{margin-top:10%;}
 .soustitre{max-width:none;}
-#introimage{display:block; margin-top:50px; margin-bottom:50px;}
-#image{position:static; width:80%; margin:7% 0 0 10%;}
-#corps{width:86%;margin:0 0 0 7%; max-width:86%;}
-.titre2{font-size:25px;margin-top:7%;}
-#reassurance{margin-left:0%; font-size:21px;}
-#contact{padding:50px 7%;}
-#contact .titre2{font-size:35px;}
-#form{  padding: 0 0 50px 7%;    }
+#introimage{display:block; padding-top:50px; margin-bottom:50px;}
+#image{position:static; width:80%; padding:7% 0 0 10%;}
+#corps{width:86%;padding:0 0 0 7%; max-width:86%;}
+.titre1{font-size:35px;}
+.titre2{font-size:25px;}
+#reassurance{padding-left:0%; font-size:21px;}
+#contact{padding:10% 7%;}
+#calendar{padding:10% 7%;}
+#calendar select, #calendar input, #calendar .btn, #calendar .feedback {width:100%;}
+#form{ padding: 10% 7%; }
 #form input, #form textarea{margin:0 0 10px 0; }
-#form .nom, #form .prenom, #form .telephone, #form .email {width:86%;}
-#form .message {width:86%; height:200px; }
-#form #feedback {width:86%; }
+#form .prenom, #form .nom, #form .telephone, #form .email, #form .btn, #form .feedback {width:100%;}
+#form .message {width:100%; height:200px; }
 #bottom{padding-left:7%;padding-top:55px;width:86%;text-align:center;}
 }
 
