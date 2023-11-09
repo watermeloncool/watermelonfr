@@ -40,7 +40,7 @@
 Nous développons des solutions d'automatisation sur-mesure afin de vous faire gagner du temps et de l'argent.
 </div>
 
-<a href="#contact"><div id="btn">
+<a href="#contact"><div class="btn">
 Rencontrer un expert
 </div></a>
 
@@ -89,31 +89,114 @@ WordPress, Salesforce, Hubspot, Microsoft Excel, Google Ads, Slack, Zoom, Google
 </div>
 
 <div id="contact">
-<div class="titre2">Rencontrer un expert</div>
-    <a href="mailto:klim@watermelon.cool"><div><img src="/img/mail.svg">klim@watermelon.cool</div></a>
-    <div><img src="/img/phone.svg">+41 79 291 87 21</div>
-    <div class="form"><img src="/img/form.svg">Formulaire de contact</div>
-    <div><img src="/img/calendar.svg">Programmer un rendez-vous</div>
-</div>
-
-
-<div id="form">
-<form id="monformulaire">
-    <input type="text" name="nom" class="nom" placeholder="Nom" required><input type="text" name="prenom" class="prenom" placeholder="Prénom" required>
-    <br>
-    <input type="tel" name="telephone" class="telephone" placeholder="Téléphone" required><input type="email" name="email" class="email" placeholder="Email" required>
-    <br>
-    <textarea name="message" class="message" placeholder="Message" required></textarea>
-    <br>
-    <input type="submit" class="button" value="Envoyer">
-</form>
-<div id="feedback" style="display:none;">Merci pour votre prise de contact ! Votre demande est en cours de traitement et notre équipe vous répondra dans les plus brefs délais.</div>
-</div>
-
-
-<div id="bottom">© <span id="annee"></span> Watermelon Sàrl</div>
-
-<script src="/code/homepage.js"></script>
+    <div class="titre1">Contact</div>
+        <div><img src="/img/mail.svg">klim@watermelon.cool</div>
+        <div><img src="/img/phone.svg">+41 79 291 87 21</div>
+    </div>
+    
+    
+    
+    <div id="calendar">
+        <div class="titre1">Programmer un rendez-vous</div>
+    
+        <div><img src="/img/place.svg">En ligne</div>
+        <div><img src="/img/time.svg">1 heure</div>
+    
+        <br>
+    
+        <form id="formulairecalendrier">
+    
+          <select id="jour" name="jour" required>
+          <option value="">Sélectionner une date</option>
+          </select>
+    
+          <select id="heure" name="heure" required>
+            <option value="">Sélectionner une heure</option>
+            <option value="10:00">10:00</option>
+            <option value="11:00">11:00</option>
+            <option value="12:00">12:00</option>
+            <option value="13:00">13:00</option>
+            <option value="14:00">14:00</option>
+          </select>
+    
+          <input type="text" name="prenom" class="prenom" placeholder="Prénom" required>
+          <input type="text" name="nom" class="nom" placeholder="Nom" required>
+          <input type="text" name="entreprise" class="entreprise" placeholder="Entreprise" required>
+          <input type="tel" name="telephone" class="telephone" placeholder="Téléphone" required>
+          <input type="email" name="email" class="email" placeholder="Email" required>
+    
+        <input type="submit" class="btn" value="Confirmer le rendez-vous">
+        </form>
+    
+        <div class="feedback">Votre demande de rendez-vous a bien été prise en compte, vous recevrez un mail de confirmation prochainement.</div>
+        
+    </div>
+    
+    
+    
+    <div id="form">
+    <div class="titre1">Formulaire de contact</div>
+    <form id="formulairedecontact">
+        <input type="text" name="prenom" class="prenom" placeholder="Prénom" required><input type="text" name="nom" class="nom" placeholder="Nom" required>
+        <br>
+        <input type="tel" name="telephone" class="telephone" placeholder="Téléphone" required><input type="email" name="email" class="email" placeholder="Email" required>
+        <br>
+        <textarea name="message" class="message" placeholder="Message" required></textarea>
+        <input type="submit" class="btn" value="Envoyer">
+    </form>
+    <div class="feedback">Votre message est bien arrivé, vous recevrez une réponse prochainement.</div>
+    </div>
+    
+    
+    
+    <div id="bottom">© <span id="annee"></span> Watermelon Sàrl</div>
+    
+    <script src="/code/homepage.js"></script>
+    
+    <script>
+    
+    /* programmer rdv - ajouter dates ----------------------------------------*/
+    function addDays(date, days) {
+      var result = new Date(date);
+      result.setDate(result.getDate() + days);
+      return result;
+    }
+    
+    function capitalize(text) {
+      return text.replace(/(?:^|\s)\S/g, function(a) { return a.toUpperCase(); });
+    }
+    
+    function formatDate(date) {
+      var options = { weekday: 'long', day: 'numeric', month: 'long' };
+      var dateString = date.toLocaleDateString('fr-FR', options);
+      return capitalize(dateString); // Capitalize chaque partie de la date
+    }
+    
+    function addNextDaysToSelect() {
+      var select = document.getElementById('jour');
+      var today = new Date();
+      var addedDays = 0;
+      var i = 1;
+    
+      // Continue jusqu'à ce que nous ayons ajouté 22 jours ouvrables
+      while (addedDays < 21) {
+        var nextDay = addDays(today, i);
+        var dayOfWeek = nextDay.getDay(); // 0 = dimanche, 1 = lundi, ..., 6 = samedi
+    
+        // Si ce n'est ni un samedi (6) ni un dimanche (0), on l'ajoute au select
+        if (dayOfWeek !== 0 && dayOfWeek !== 6) {
+          var dateStr = formatDate(nextDay);
+          var option = new Option(dateStr, dateStr); // Utilisez dateStr pour le texte et la valeur
+          select.options.add(option);
+          addedDays++; // Un jour ouvrable de plus est ajouté
+        }
+        i++; // Incrémente le compteur de jours total
+      }
+    }
+    
+    document.addEventListener('DOMContentLoaded', addNextDaysToSelect);
+    
+    </script>
 
 </body>
 </html>
