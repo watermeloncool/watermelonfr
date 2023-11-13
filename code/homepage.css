@@ -14,8 +14,8 @@
 
 /* global ------------------------------------------------- */
 body,html{ background: var(--dark) ; color:white; font-family:'Roboto', Helvetica, Arial, sans-serif; font-size:18px; font-weight:400; scroll-behavior: smooth; margin:0; padding:0;}
-a{color:white; text-decoration:none;}
-.titre1{font-size:40px; font-weight:700; padding:0 0 30px 0; line-height: 130%; }
+a{color:white; text-decoration:none; }
+.titre1{font-size:40px; font-weight:700; padding:0 0 20px 0; line-height: 130%; }
 .titre2{font-size:28px; font-weight:700; padding:66px 0 20px 0; line-height: 130%; }
 input, select, textarea { -webkit-appearance: none; -moz-appearance: none; appearance: none; border:0; margin:0; font-family:'Roboto', Helvetica, Arial, sans-serif; font-size:18px; padding:13px 20px; box-sizing: border-box; border-radius:12px; background:white; color: var(--dark); font-weight:400;}
 select {cursor:pointer;}
@@ -48,6 +48,9 @@ ul {padding-top:0px; margin-top:0px; padding-bottom:50px;}
 /* contact ----------------------------------------------- */
 #contact{  padding: 50px 0 60px 10%; background:var(--dark); }
 #contact img{width:30px; vertical-align:middle; padding:5px 20px 5px 0;}
+#contact .titre1{display:block;}
+#contact a{display:inline-block;}
+#contact div{display:inline-block;}
 
 /* calendrier --------------------------------------------- */
 #calendar{  padding: 50px 0 60px 10%; background:var(--dark1);  }
@@ -58,12 +61,19 @@ ul {padding-top:0px; margin-top:0px; padding-bottom:50px;}
 #calendar .feedback {width:350px; line-height: 155%;}
 
 /* formulaire de contact --------------------------------- */
-#form{  padding: 50px 0 60px 10%; }
+#form{  padding: 50px 0 60px 10%; background:var(--dark); }
 #form input, #form textarea { margin:0 10px 10px 0; }
 #form .prenom, #form .nom, #form .telephone, #form .email {width:345px;}
 #form .message {width:700px; height:200px; display:block;}
 #form .btn {font-weight:500; background:var(--blue); color:white;}
 #form .feedback {width:700px; line-height: 155%;}
+
+/* chat ---------------------------------------------------- */
+#chat {width:400px; max-height:100vh; padding:10px; position:fixed; right:0; bottom:0; box-sizing: border-box; overflow-y: auto; }
+#chat input {width:100%;}
+#chat .bubble1, #chat .bubble2 {width:280px; margin-bottom: 10px; font-weight:400; padding:13px 20px; color:var(--dark); border-radius:12px;}
+#chat .bubble1 {margin-left:0; background:white; }
+#chat .bubble2 {margin-left:60px; background:var(--green);  }
 
 /* bottom ------------------------------------------------ */
 #bottom{padding:50px 0 40px 10%; font-size:16px; color:var(--grey);}
