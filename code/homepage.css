@@ -28,7 +28,7 @@ select {cursor:pointer;}
 #logo{width:30px; padding:25px; position:absolute; }
 #top{padding-top:29px; padding-left:65px; font-weight:500; }
 #introtexte{width:35%; padding:17vh 0 0 10%; display:inline-block; }
-.titre{display:none; font-size:60px; font-size:5vw; font-weight:700; width: max-content;  animation: fadeinout 2.5s linear forwards; }
+.titre{display:none; font-size:60px; font-size:4.5vw; font-weight:700; width: max-content;  animation: fadeinout 2.5s linear forwards; }
 @keyframes fadeinout {0% {opacity: 0;} 50% {opacity: 1;} 75% {opacity: 1;} 100% {opacity: 0;}}
 .titre:first-of-type {display: block;}
 .soustitre{line-height: 155%; max-width:505px; padding-top:30px; padding-bottom:40px; color: var(--grey); }
