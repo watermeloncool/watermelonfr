@@ -36,6 +36,10 @@ select {cursor:pointer;}
 .derouler .contenu .radio.selected { border:solid 2px var(--blue); }
 .derouler .contenu, .derouler .cacher {display:none;}
 
+@media screen and (max-width: 600px) { 
+  .titre {width:80%; line-height:110%; margin-left:auto; margin-right:auto;}
+  }
+
 /* menu ----------------------------------------------------- */
 #menu {z-index:100; width:100%; top:0; left:0; text-align:center; line-height: 100%; }
 #menu img {height:25px; padding:10px 15px; vertical-align:middle;}
@@ -105,7 +109,7 @@ select {cursor:pointer;}
 #siteweb .bloc.six .btn {background:rgb(236, 195, 159); color:black; }
 
 @media screen and (max-width: 700px) { 
-#siteweb .grandtitre {width:80%; font-size:40px;}
+#siteweb .grandtitre {width:80%; font-size:40px; margin:40px auto; }
 #siteweb .bloc {width:90%;}
 }
 
@@ -115,19 +119,30 @@ select {cursor:pointer;}
 #dev .soustitre{width:550px; padding-top:30px; padding-bottom:40px; font-size:18px; font-weight:400; line-height: 155%; }
 #dev #image{ position:absolute; top:0; right:0; width:480px; display:inline-block; vertical-align:top; }
 
+@media screen and (max-width: 1200px) { 
+  #dev {width:80%; text-align:center; padding:0 10%; margin:40px auto 0 auto;}
+  #dev .grandtitre{width:100%; font-size:40px; }
+  #dev .soustitre{width:100%;  }
+ #dev #image{ display:block; width:50%; clear:both; position:relative; margin-top:60px; margin-left:auto; margin-right:auto; }
+  }
+
+@media screen and (max-width: 700px) { 
+ #dev #image{ width:90%;  }
+  }
+
 /* blocs ------------------------------------------------- */
 #blocs {width:1200px; margin:0 auto 0 auto; text-align:center; }
 #blocs .bloc {width:230px; height:300px; max-height:600px; background:rgb(20,20,22); border:solid 3px rgb(40,40,42); margin:12px 10px; padding:35px 20px 0 20px; display:inline-block; vertical-align:top; border-radius:20px; }
 #blocs .bloc img {height:50px; }
 #blocs .bloc .titrebloc {margin:15px 0 10px 0; font-size:19px; }
 #blocs .bloc .texte {font-weight:300; font-size:14px;   }
+
 @media screen and (max-width: 1200px) { 
   #blocs {width:100%; }
   }
 
   @media screen and (max-width: 700px) { 
-    #blocs {width:98%; margin:1%; }
-    #blocs .bloc {width:38%; margin:1.5% 1%; }
+    /* #blocs .bloc {width:70%; } */
     }
 
 /* texte ----------------------------------------------- */
