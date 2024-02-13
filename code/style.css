@@ -106,7 +106,7 @@ select {cursor:pointer;}
 
 @media screen and (max-width: 700px) { 
 #siteweb .grandtitre {width:80%; font-size:40px;}
-#siteweb .bloc {width:75%;}
+#siteweb .bloc {width:90%;}
 }
 
 /* dev ------------------------------------------------- */
