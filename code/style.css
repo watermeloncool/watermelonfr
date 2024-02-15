@@ -22,13 +22,12 @@ select {cursor:pointer;}
 ::placeholder {color: grey;}
 .btn{ background:var(--blue); color:white; border-radius:25px; cursor:pointer; line-height: 100%; text-align:center; font-size:16px; display:block; padding: 15px 30px; display:inline-block; }
 .btn:hover{background:white !important; color:black !important; cursor:pointer !important; }
-.feedback{display:none; box-sizing: border-box; padding:13px 20px; background:var(--green); color: var(--dark); border-radius:12px;}
 .opacite {opacity:0.35;}
 .titre{font-size:30px; padding:100px 0 30px 0; width:100%; text-align:center;  }
 
-.derouler {background:rgb(40, 40, 42); /*border:solid 1px rgb(70, 70, 75);*/ margin-bottom:10px; border-radius:10px;}
+.derouler {background:rgb(40, 40, 42); margin-bottom:10px; border-radius:15px;}
 .derouler .top {display:flex; justify-content: space-between; align-items: center; padding:15px 0; -webkit-user-select: none; -ms-user-select: none; user-select: none; }
-.derouler .top:hover {background:rgb(35,35,37); border-radius:10px; cursor:pointer; }
+.derouler .top:hover {background:rgb(35,35,37); border-radius:15px; cursor:pointer; }
 .derouler .top span {text-align:left; margin-right:10px;}
 .derouler .image {vertical-align:middle; width:15px;}
 .derouler .contenu {padding:10px 15px 10px 15px; text-align:left; font-weight:500; }
@@ -41,11 +40,12 @@ select {cursor:pointer;}
   }
 
 /* menu ----------------------------------------------------- */
-#menu {z-index:100; width:100%; top:0; left:0; text-align:center; line-height: 100%; }
-#menu img {height:25px; padding:10px 15px; vertical-align:middle;}
+#menu {z-index:100; width:100%; top:0; left:0; text-align:center; line-height: 115%; }
+#menu img {height:25px; padding:0 20px; vertical-align:middle;}
 #menupc div:hover, #sousmenumobile div:hover{color:var(--blue); cursor:pointer;}
-#menupc div {display:inline-block; padding:25px 15px; vertical-align:middle;  }
+#menupc div {display:inline-block; padding:25px 20px; vertical-align:middle;  }
 #menumobile, #sousmenumobile {display:none;}
+#menumobile img {padding:20px 20px;}
 #sousmenumobile {padding:40px 40px; text-align:left; height:100vh;}
 #sousmenumobile div {padding:20px 0;font-size:30px;  color:white;}
 #close {display:none}
@@ -69,7 +69,7 @@ select {cursor:pointer;}
 
 /* siteweb ------------------------------------------------ */
 #siteweb {width:100%; text-align:center; }
-#siteweb .grandtitre { text-align:center; font-size:55px; width:570px; margin:60px auto; line-height: 110%;  }
+#siteweb .grandtitre { text-align:center; font-size:55px; width:570px; margin:70px auto; line-height: 110%;  }
 #siteweb #image {width:200px;}
 #siteweb .bloc {position:relative; display:inline-block; width:370px; margin:15px; border:solid 4px white; vertical-align:top; border-radius:20px; text-align:center;  }
 #siteweb .bloc .soustitre { margin:20px 0 30px 20px; width:200px; /*height:100px;*/ text-align:left; font-size:30px; line-height: 102%; }
@@ -114,21 +114,31 @@ select {cursor:pointer;}
 }
 
 /* dev ------------------------------------------------- */
-#dev {position:relative; width:1100px; text-align:left; margin:70px auto 130px auto; padding-top:50px; }
-#dev .grandtitre{width:550px; font-size:60px; line-height: 110%;  }
-#dev .soustitre{width:550px; padding-top:30px; padding-bottom:40px; font-size:18px; font-weight:400; line-height: 155%; }
-#dev #image{ position:absolute; top:0; right:0; width:480px; display:inline-block; vertical-align:top; }
-
-@media screen and (max-width: 1200px) { 
-  #dev {width:80%; text-align:center; padding:0 10%; margin:60px auto 0 auto;}
-  #dev .grandtitre{width:100%; font-size:40px; }
-  #dev .soustitre{width:100%;  }
- #dev #image{ display:block; width:50%; clear:both; position:relative; margin-top:60px; margin-left:auto; margin-right:auto; }
-  }
+#dev {width:100%; text-align:center; }
+#dev .grandtitre { text-align:center; font-size:55px; width:570px; margin:70px auto 100px auto; line-height: 110%;  }
 
 @media screen and (max-width: 700px) { 
- #dev #image{ width:90%;  }
+  #dev .grandtitre {width:80%; font-size:40px; margin:60px auto 40px auto; }
   }
+
+
+/* estimateur de prix ------------------------------------- */
+#estimateur {width:1000px; margin-left:auto; margin-right:auto; text-align:center; }
+#estimateur .soustitre { margin:90px 0 25px 0; font-size:22px;  text-align:left;}
+#estimateur .reponses {display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; font-size:17px; cursor:pointer;}
+#estimateur .reponse { display: flex; align-items: center; justify-content: center; border-radius: 15px; border:solid 2px var(--grey); height: auto; vertical-align:middle; padding:20px; text-align:center; -webkit-user-select: none; -ms-user-select: none; user-select: none;  }
+#estimateur .reponse.selected {border:solid 2px var(--blue);}
+#estimateur .total { display:inline-block; text-align:center; margin-top:70px; font-size:17px; background:var(--green); color:black; border-radius:15px; padding:15px 25px; }
+
+@media screen and (max-width: 1050px) { 
+  #estimateur {width:90%; margin:0 auto 0 auto; }
+  }
+
+  @media screen and (max-width: 700px) { 
+    #estimateur .soustitre { text-align:center; }
+    #estimateur .reponses {grid-template-columns: repeat(1, 1fr); }
+    }
+
 
 /* blocs ------------------------------------------------- */
 #blocs {width:1200px; margin:0 auto 0 auto; text-align:center; }
@@ -161,17 +171,6 @@ select {cursor:pointer;}
 #lang a:hover{background:rgb(40,40,42); }
 #lang .noborder {border-bottom:none;}
 
-/* corps --------------------------------------------------- */
-/*
-#corps{padding:5% 10%;  }
-#corps .titre{font-size:28px; padding:60px 0 30px 0; max-width:700px; }
-#corps .texte{color: var(--grey); max-width:700px; }
-#corps .bloc {width:240px; margin:20px; display:inline-block; text-align:center; vertical-align:top;  }
-#corps .bloc img {height:80px; padding-bottom:10px; vertical-align:bottom; }
-#corps .bloc .soustitre {padding: 10px 0 10px 0; }
-#corps .bloc .texte {width:100%;}
-*/
-
 /* faq ------------------------------------------------- */
 #faq .derouler {width:900px; margin-left:auto; margin-right:auto;}
 #faq .derouler .top {font-size:18px; padding:15px 20px;}
@@ -188,11 +187,12 @@ select {cursor:pointer;}
 #form .prenom, #form .nom, #form .telephone, #form .email {width:345px; }
 #form .message {width:700px; height:200px;}
 #form .btn {background:var(--blue); font-size:16px; color:white; border-radius:25px; padding: 15px 30px; }
-#contact .feedback {width:700px;}
+#contact .feedback{ display:none; width:665px; color:var(--green); font-size:18px; margin:20px auto; }
 
 @media screen and (max-width: 850px) { 
 #contact {width:100%;}
-#form input, #form textarea, #form .feedback {  width:90% !important; }
+#form input, #form textarea {  width:90% !important; }
+#contact .feedback {  width:83%; }
 #form .message {width:90%; height:200px; }
 }
 

@@ -15,13 +15,7 @@ sousmenumobile.style.display = 'none';
 closebtn.style.display = 'none';
 });
 
-/* tarifs img ---------------------------------------------- */
-/*
-const liste = document.querySelectorAll('#tarifs .liste');
-const option = document.querySelectorAll('#tarifs .option');
-liste.forEach(item => {item.insertAdjacentHTML('afterbegin', `<img class="image" src="img/check.svg">`);});
-option.forEach(item => {item.insertAdjacentHTML('afterbegin', `<img class="image" src="img/plus.svg">`);}); */
-
+/* derouler ---------------------------------------------- */
 document.querySelectorAll('.derouler .top').forEach(function(derouler) {
   derouler.addEventListener('click', function() {
     let parent = this.parentElement;
@@ -40,13 +34,48 @@ document.querySelectorAll('.derouler .top').forEach(function(derouler) {
   });
 });
 
+/* estimateur ---------------------------------------------- */
+document.addEventListener('DOMContentLoaded', () => {
+  const estimateur = document.getElementById('estimateur');
+  const groupesReponses = estimateur.querySelectorAll('.reponses');
+
+  groupesReponses.forEach(groupe => {
+      const reponses = groupe.querySelectorAll('.reponse');
+
+      reponses.forEach(reponse => {
+          reponse.addEventListener('click', function() {
+              // Si l'élément cliqué n'a pas déjà la classe 'selected', retirer 'selected' des autres éléments du même groupe
+              if (!this.classList.contains('selected')) {
+                  reponses.forEach(el => el.classList.remove('selected'));
+              }
+              // Basculer la classe 'selected' pour l'élément cliqué
+              this.classList.toggle('selected');
+
+              // Recalculer le total pour tous les éléments sélectionnés dans tous les groupes
+              let total = 0;
+              estimateur.querySelectorAll('.reponses .reponse.selected').forEach(selected => {
+                  total += Number(selected.getAttribute('data-prix') || 0);
+              });
+
+              // Mettre à jour le total
+              const chf = estimateur.querySelector('.chf');
+              if (chf) { chf.textContent = total.toLocaleString('fr-CH').replace(/\s/g, "'"); }
+          });
+      });
+  });
+});
+
+
+
+
+
 /* copyright année ------------------------------------------ */
 var date = new Date();
 var annee = date.getFullYear(); 
 document.getElementById("annee").innerHTML = annee;
 
 /* contact ------------------------------ */
-document.getElementById('contact').addEventListener('submit', function(event) {
+document.getElementById('form').addEventListener('submit', function(event) {
   event.preventDefault(); // Empêche la soumission normale du formulaire.
 
   var scriptURL = "https://script.google.com/macros/s/AKfycbwfBV-WbnLDkGJWVRTTiHiUpCx_CtF2bp7smFquOuBbyx4tjcjimh71Eev3oi3q-rhDRQ/exec";
@@ -58,7 +87,8 @@ document.getElementById('contact').addEventListener('submit', function(event) {
   })
   .finally(() => {
     // Ce code s'exécutera quelle que soit l'issue de la requête fetch
-    document.querySelector('.feedback').style.display = 'block';
+    document.querySelector('#form .btn').style.display = 'none';
+    document.querySelector('.feedback').style.display = 'inline-block';
   });
 });
 
