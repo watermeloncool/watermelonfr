@@ -40,21 +40,34 @@ select {cursor:pointer;}
   }
 
 /* menu ----------------------------------------------------- */
-#menu {z-index:100; width:100%; top:0; left:0; text-align:center; line-height: 115%; }
-#menu img {height:25px; padding:0 20px; vertical-align:middle;}
-#menupc div:hover, #sousmenumobile div:hover{color:var(--blue); cursor:pointer;}
-#menupc div {display:inline-block; padding:25px 20px; vertical-align:middle;  }
-#menumobile, #sousmenumobile {display:none;}
-#menumobile img {padding:20px 20px;}
-#sousmenumobile {padding:40px 40px; text-align:left; height:100vh;}
-#sousmenumobile div {padding:20px 0;font-size:30px;  color:white;}
-#close {display:none}
+#menu {position:fixed; z-index:1; width:100%; top:0; left:0; text-align:center; line-height: 115%;  padding:10px 0; background:rgba(0,0,0,0.75); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(20px); }
+#menu div {display:inline-block; vertical-align:middle; margin:0 20px; }
+#menu img {display:inline-block; height:25px; vertical-align:middle; margin:0 20px;}
+#menu div:hover{color:var(--blue); cursor:pointer; }
+
+#menumobile { display:none; position:fixed; height:45px; width:100%; top:0; left:0; z-index:2; background:rgba(0,0,0,0.75); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(20px);}
+#menumobile #logo {height:25px; position:fixed; top:10px; left:20px;}
+#menumobile #open {height:25px; position:fixed; top:10px; right:20px; }
+
+#sousmenumobile {display:none; position:fixed; background:black; top:0; left:0; z-index:3; padding:40px 40px; text-align:left; width:100%; height:100vh; overflow: hidden;}
+#sousmenumobile div {padding:20px 0; font-size:30px;  color:white; line-height:110%;}
+#sousmenumobile #close {position:fixed; top:10px; right:20px; height:25px; }
 
 @media screen and (max-width: 600px) { 
-#menupc {display:none;}
-#menumobile { display:flex; justify-content: space-between;align-items: center; }
-#sousmenumobile {background:black;}
+#menu {display:none;}
+#menumobile { display:block; }
 }
+
+/* accueil ---------------------------------------------- */
+/*
+#accueil {width:1000px; margin:100px auto; text-align:center; display: grid; grid-template-columns: repeat(2, 1fr); gap: 35px; }
+#accueil .bloc { align-items: center; justify-content: center; border-radius: 25px; height: auto; vertical-align:middle; padding:20px 20px 40px 20px; text-align:center; }
+#accueil .titre {display:block; font-size:50px; line-height:110%; padding:0; margin:20px 0; }
+#accueil .texte {display:block; font-size:18px; line-height:155%; padding:0; margin:20px 0; }
+
+#accueil .un {background:rgb(73, 3, 143);}
+#accueil .deux {background:rgb(212, 77, 14);}
+*/
 
 /* lead ------------------------------------------------- */
 #lead {position:relative; width:1100px; text-align:center; margin:90px auto 100px auto; }
@@ -69,7 +82,7 @@ select {cursor:pointer;}
 
 /* siteweb ------------------------------------------------ */
 #siteweb {width:100%; text-align:center; }
-#siteweb .grandtitre { text-align:center; font-size:55px; width:570px; margin:70px auto; line-height: 110%;  }
+#siteweb .grandtitre { text-align:center; font-size:55px; width:570px; margin:130px auto 70px auto; line-height: 110%;  }
 #siteweb #image {width:200px;}
 #siteweb .bloc {position:relative; display:inline-block; width:370px; margin:15px; border:solid 4px white; vertical-align:top; border-radius:20px; text-align:center;  }
 #siteweb .bloc .soustitre { margin:20px 0 30px 20px; width:200px; /*height:100px;*/ text-align:left; font-size:30px; line-height: 102%; }
@@ -109,16 +122,16 @@ select {cursor:pointer;}
 #siteweb .bloc.six .btn {background:rgb(236, 195, 159); color:black; }
 
 @media screen and (max-width: 700px) { 
-#siteweb .grandtitre {width:80%; font-size:40px; margin:60px auto 40px auto; }
+#siteweb .grandtitre {width:80%; font-size:40px; margin:80px auto 40px auto; }
 #siteweb .bloc {width:90%;}
 }
 
 /* dev ------------------------------------------------- */
 #dev {width:100%; text-align:center; }
-#dev .grandtitre { text-align:center; font-size:55px; width:570px; margin:70px auto 100px auto; line-height: 110%;  }
+#dev .grandtitre { text-align:center; font-size:55px; width:570px; margin:130px auto 100px auto; line-height: 110%;  }
 
 @media screen and (max-width: 700px) { 
-  #dev .grandtitre {width:80%; font-size:40px; margin:60px auto 40px auto; }
+  #dev .grandtitre {width:80%; font-size:40px; margin:80px auto 40px auto; }
   }
 
 
@@ -183,6 +196,7 @@ select {cursor:pointer;}
 /* contact -------------------------------------------- */
 #contact input, #contact select, #contact textarea { -webkit-appearance: none; -moz-appearance: none; appearance: none; border:0; margin:0; font-family:'Roboto', Helvetica, Arial, sans-serif; padding:15px 20px; box-sizing: border-box; border-radius:10px; background:white; color: black; font-size:15px; font-weight:700; }
 #contact {width:800px; margin:0 auto; text-align:center; }
+#contact .grandtitre {text-align:center; font-size:55px; width:570px; margin:130px auto 70px auto; line-height: 110%; }
 #form input, #form textarea { margin:5px; }
 #form .prenom, #form .nom, #form .telephone, #form .email {width:345px; }
 #form .message {width:700px; height:200px;}

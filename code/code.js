@@ -1,18 +1,17 @@
 /* menu --------------------------------------------------- */
+const menumobile = document.getElementById('menumobile');
 const sousmenumobile = document.getElementById('sousmenumobile');
 const openbtn = document.getElementById('open');
 const closebtn = document.getElementById('close');
 
 openbtn.addEventListener('click', function() {
-openbtn.style.display = 'none';
+menumobile.style.display = 'none';
 sousmenumobile.style.display = 'block';
-closebtn.style.display = 'block';
 });
 
 closebtn.addEventListener('click', function() {
-openbtn.style.display = 'block';
-sousmenumobile.style.display = 'none';
-closebtn.style.display = 'none';
+  menumobile.style.display = 'block';
+  sousmenumobile.style.display = 'none';
 });
 
 /* derouler ---------------------------------------------- */
