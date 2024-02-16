@@ -81,9 +81,9 @@ select {cursor:pointer;}
 #lead .cgv a {text-decoration:underline;}
 
 /* siteweb ------------------------------------------------ */
-#siteweb {width:100%; text-align:center; }
-#siteweb .grandtitre { text-align:center; font-size:55px; width:570px; margin:130px auto 70px auto; line-height: 110%;  }
-#siteweb #image {width:200px;}
+#siteweb {width:100%; max-width:1300px; margin: 60px auto 0 auto; text-align:center; }
+#siteweb .grandtitre { width:550px; text-align:center; font-size:55px; margin-right:45px; line-height: 110%;vertical-align:middle; display:inline-block; }
+#siteweb #image {width:130px; display:inline-block; vertical-align:middle; margin:30px 0; }
 #siteweb .bloc {position:relative; display:inline-block; width:370px; margin:15px; border:solid 4px white; vertical-align:top; border-radius:20px; text-align:center;  }
 #siteweb .bloc .soustitre { margin:20px 0 30px 20px; width:200px; /*height:100px;*/ text-align:left; font-size:30px; line-height: 102%; }
 #siteweb .prix{position:absolute; top:3px; right:0; display:inline-block; margin:20px; text-align:right; font-size:20px; }
@@ -121,8 +121,9 @@ select {cursor:pointer;}
 #siteweb .bloc.six span {color:rgb(236, 195, 159);  }
 #siteweb .bloc.six .btn {background:rgb(236, 195, 159); color:black; }
 
-@media screen and (max-width: 700px) { 
-#siteweb .grandtitre {width:80%; font-size:40px; margin:80px auto 40px auto; }
+@media screen and (max-width: 800px) { 
+  #siteweb .grandtitre {width:60%; margin-right:5%; font-size:8vw; }
+  #siteweb #image {width:25%; }
 #siteweb .bloc {width:90%;}
 }
 
@@ -151,6 +152,25 @@ select {cursor:pointer;}
     #estimateur .soustitre { text-align:center; }
     #estimateur .reponses {grid-template-columns: repeat(1, 1fr); }
     }
+
+
+/* contact -------------------------------------------- */
+#contact input, #contact select, #contact textarea { -webkit-appearance: none; -moz-appearance: none; appearance: none; border:0; margin:0; font-family:'Roboto', Helvetica, Arial, sans-serif; padding:15px 15px; box-sizing: border-box; border-radius:10px; background:white; color: black; font-size:15px; font-weight:700; }
+#contact {width:100%; margin:100px auto; text-align:center;  }
+#contact .grandtitre { width:400px; vertical-align:middle; display:inline-block; margin-right:70px; text-align:left; font-size:55px; line-height: 105%;  }
+#contact #image {width:175px; display:inline-block; vertical-align:middle; }
+#contact #form { width:650px; margin-left:auto; margin-right:auto; }
+#form .email {width:100%; margin:30px 0 10px 0; }
+#form .message {width:100%; height:200px; margin-bottom:10px;}
+#form .btn { background:var(--blue); font-size:16px; color:white; border-radius:25px; padding: 15px 30px; }
+#contact .feedback{ display:none; width:665px; color:var(--green); margin:0 auto; font-weight:400; }
+
+@media screen and (max-width: 700px) {
+#contact .grandtitre {width:50%; margin-right:5%; font-size:9vw; }
+#contact #image {width:35%; }
+#form { width:90% !important; }
+#contact .feedback {  width:90%; }
+}
 
 
 /* blocs ------------------------------------------------- */
@@ -193,24 +213,6 @@ select {cursor:pointer;}
 #faq .derouler {width:90%;}
 }
 
-/* contact -------------------------------------------- */
-#contact input, #contact select, #contact textarea { -webkit-appearance: none; -moz-appearance: none; appearance: none; border:0; margin:0; font-family:'Roboto', Helvetica, Arial, sans-serif; padding:15px 15px; box-sizing: border-box; border-radius:10px; background:white; color: black; font-size:15px; font-weight:700; }
-#contact {width:100%; margin:100px auto; text-align:center;  }
-#contact .grandtitre { width:400px; vertical-align:middle; display:inline-block; margin-right:40px; text-align:left; font-size:65px; line-height: 105%;  }
-#contact .soustitre {font-size:18px; line-height:135%; margin-top:20px; }
-#contact #image {width:300px; display:inline-block; vertical-align:middle; }
-#contact #form { width:740px; margin-left:auto; margin-right:auto; }
-#form .email {width:100%; margin:30px 0 10px 0; }
-#form .message {width:100%; height:200px; margin-bottom:10px;}
-#form .btn { background:var(--blue); font-size:16px; color:white; border-radius:25px; padding: 15px 30px; }
-#contact .feedback{ display:none; width:665px; color:var(--green); margin:0 auto; font-weight:400; }
-
-@media screen and (max-width: 800px) {
-#contact .grandtitre {width:50%; margin-right:5%; font-size:9vw; }
-#contact #image {width:35%; }
-#form { width:90% !important; }
-#contact .feedback {  width:90%; }
-}
 
 /* footer ------------------------------------------------ */
 #footer{ background: black ; text-align:center; margin-top:100px; }
