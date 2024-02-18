@@ -50,24 +50,13 @@ select {cursor:pointer;}
 #menumobile #open {height:25px; position:fixed; top:10px; right:20px; }
 
 #sousmenumobile {display:none; position:fixed; background:black; top:0; left:0; z-index:3; text-align:left; width:100%; height:100vh; overflow: hidden; padding:40px 0;}
-#sousmenumobile div {margin:40px; font-size:30px;  color:white; line-height:110%;}
+#sousmenumobile div {margin:30px 40px; font-size:25px;  color:white; line-height:110%;}
 #sousmenumobile #close {position:fixed; top:10px; right:20px; height:25px; }
 
 @media screen and (max-width: 600px) { 
 #menu {display:none;}
 #menumobile { display:block; }
 }
-
-/* accueil ---------------------------------------------- */
-/*
-#accueil {width:1000px; margin:100px auto; text-align:center; display: grid; grid-template-columns: repeat(2, 1fr); gap: 35px; }
-#accueil .bloc { align-items: center; justify-content: center; border-radius: 25px; height: auto; vertical-align:middle; padding:20px 20px 40px 20px; text-align:center; }
-#accueil .titre {display:block; font-size:50px; line-height:110%; padding:0; margin:20px 0; }
-#accueil .texte {display:block; font-size:18px; line-height:155%; padding:0; margin:20px 0; }
-
-#accueil .un {background:rgb(73, 3, 143);}
-#accueil .deux {background:rgb(212, 77, 14);}
-*/
 
 /* lead ------------------------------------------------- */
 #lead {position:relative; width:1100px; text-align:center; margin:90px auto 100px auto; }
@@ -122,6 +111,7 @@ select {cursor:pointer;}
 #siteweb .bloc.six .btn {background:rgb(236, 195, 159); color:black; }
 
 @media screen and (max-width: 800px) { 
+  #siteweb {margin-top:40px;}
   #siteweb .grandtitre {width:60%; margin-right:5%; font-size:8vw; }
   #siteweb #image {width:25%; }
 #siteweb .bloc {width:90%;}
@@ -132,13 +122,13 @@ select {cursor:pointer;}
 #dev .grandtitre { text-align:center; font-size:55px; width:570px; margin:130px auto 100px auto; line-height: 110%;  }
 
 @media screen and (max-width: 700px) { 
-  #dev .grandtitre {width:80%; font-size:40px; margin:80px auto 40px auto; }
+  #dev .grandtitre {width:80%; font-size:40px; margin:100px auto 40px auto; }
   }
 
 
 /* estimateur de prix ------------------------------------- */
 #estimateur {width:1000px; margin-left:auto; margin-right:auto; text-align:center; }
-#estimateur .soustitre { margin:90px 0 25px 0; font-size:22px;  text-align:left;}
+#estimateur .soustitre { margin:80px 0 25px 0; font-size:22px;  text-align:left;}
 #estimateur .reponses {display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; font-size:17px; cursor:pointer;}
 #estimateur .reponse { display: flex; align-items: center; justify-content: center; border-radius: 15px; border:solid 2px var(--grey); height: auto; vertical-align:middle; padding:20px; text-align:center; -webkit-user-select: none; -ms-user-select: none; user-select: none;  }
 #estimateur .reponse.selected {border:solid 2px var(--blue);}
@@ -157,52 +147,35 @@ select {cursor:pointer;}
 /* contact -------------------------------------------- */
 #contact input, #contact select, #contact textarea { -webkit-appearance: none; -moz-appearance: none; appearance: none; border:0; margin:0; font-family:'Roboto', Helvetica, Arial, sans-serif; padding:15px 15px; box-sizing: border-box; border-radius:10px; background:white; color: black; font-size:15px; font-weight:700; }
 #contact {width:100%; margin:100px auto; text-align:center;  }
-#contact .grandtitre { width:400px; vertical-align:middle; display:inline-block; margin-right:70px; text-align:left; font-size:55px; line-height: 105%;  }
-#contact #image {width:175px; display:inline-block; vertical-align:middle; }
+#contact .grandtitre { width:350px; vertical-align:middle; display:inline-block; margin-right:70px; font-size:55px; line-height: 105%;  }
+#contact #image {width:145px; display:inline-block; vertical-align:middle; }
 #contact #form { width:650px; margin-left:auto; margin-right:auto; }
 #form .email {width:100%; margin:30px 0 10px 0; }
 #form .message {width:100%; height:200px; margin-bottom:10px;}
 #form .btn { background:var(--blue); font-size:16px; color:white; border-radius:25px; padding: 15px 30px; }
 #contact .feedback{ display:none; width:665px; color:var(--green); margin:0 auto; font-weight:400; }
+#contact #form div {text-align:left; margin:25px 0; font-size:13px; font-weight:400; }
 
 @media screen and (max-width: 700px) {
+  #contact {margin-top:60px;}
 #contact .grandtitre {width:50%; margin-right:5%; font-size:9vw; }
-#contact #image {width:35%; }
+#contact #image {width:30%; }
 #form { width:90% !important; }
 #contact .feedback {  width:90%; }
 }
 
 
-/* blocs ------------------------------------------------- */
-#blocs {width:1200px; margin:0 auto 0 auto; text-align:center; }
-#blocs .bloc {width:230px; height:300px; max-height:600px; background:rgb(20,20,22); border:solid 3px rgb(40,40,42); margin:12px 10px; padding:35px 20px 0 20px; display:inline-block; vertical-align:top; border-radius:20px; }
-#blocs .bloc img {height:50px; }
-#blocs .bloc .titrebloc {margin:15px 0 10px 0; font-size:19px; }
-#blocs .bloc .texte {font-weight:300; font-size:14px;   }
-
-@media screen and (max-width: 1200px) { 
-  #blocs {width:100%; }
-  }
-
-  @media screen and (max-width: 700px) { 
-    /* #blocs .bloc {width:70%; } */
-    }
-
 /* texte ----------------------------------------------- */
 #texte {width:800px; margin-left:auto; margin-right:auto; text-align:left; }
-#texte .grandtitre {font-size:50px; text-align:left; padding:0; margin:70px 0; line-height:110%;}
+#texte .grandtitre {font-size:50px; text-align:left; padding:0; margin:120px 0 70px 0; line-height:110%;}
 #texte .titre {font-size:30px; text-align:left; padding:0; margin:70px 0 20px 0;  line-height:110%;}
 #texte .texte {font-size:16px; text-align:left; padding:0; margin:15px 0; font-weight:400; }
 
 @media screen and (max-width: 900px) { 
-  #texte {width:90%;}
+  #texte {width:90%; }
+  #texte .grandtitre {margin-top:100px;}
   }
 
-/* lang ------------------------------------------------- */
-#lang {width:100%; height:100vh; padding: 100px 0; }
-#lang a {width:300px; margin-left:auto; margin-right:auto; display:block; color:white; font-size:20px; padding:20px; border-bottom:solid 1px rgb(40,40,42); }
-#lang a:hover{background:rgb(40,40,42); }
-#lang .noborder {border-bottom:none;}
 
 /* faq ------------------------------------------------- */
 #faq .derouler {width:900px; margin-left:auto; margin-right:auto;}
@@ -216,15 +189,19 @@ select {cursor:pointer;}
 
 /* footer ------------------------------------------------ */
 #footer{ background: black ; text-align:center; margin-top:100px; }
-#footer .bloc{display:inline-block; vertical-align:top; text-align:left; width:20%; margin:50px 0 50px 0; vertical-align:middle; text-align:center;}
-#footer .footertitre {color:var(--grey);  }
+#footer .bloc{display:inline-block; vertical-align:top; text-align:left; margin:50px 70px; vertical-align:middle; text-align:left;}
+#footer .adresse {color:var(--grey); font-weight:500;}
 #footer a:hover{cursor:pointer; color:var(--blue);}
 #footer img {width:20px; padding-right:5px; vertical-align:middle;}
+#footer .lang {border:solid 2px var(--grey); border-radius:25px; vertical-align:middle; display:inline-block; }
+#footer .lang img {width:17px; margin:8px 5px 8px 15px; vertical-align:middle; }
+#footer .lang .texte {margin:8px 20px 8px 0; display:inline-block; vertical-align:middle; }
+#footer .lang:hover {color:white; border:solid 2px white; }
 
 @media screen and (max-width: 850px) { 
-#footer {padding: 50px 0; }
-#footer .bloc{width:90%; margin: 25px 0; }
+#footer {padding: 20px 0; }
+#footer .bloc{margin: 50px 0; display:block; text-align:center; }
 }
 
 /* copyright ----------------------------------------------- */
-#copyright { background:black; color:var(--grey);  width:100%; padding-bottom:10px; text-align:center; line-height: 100%; font-size:12px; font-weight:400; }
+#copyright { background:black;  width:100%; padding-bottom:20px; text-align:center; line-height: 100%; font-size:12px; font-weight:500; }
