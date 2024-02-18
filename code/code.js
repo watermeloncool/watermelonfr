@@ -36,6 +36,7 @@ document.querySelectorAll('.derouler .top').forEach(function(derouler) {
 /* estimateur ---------------------------------------------- */
 document.addEventListener('DOMContentLoaded', () => {
   const estimateur = document.getElementById('estimateur');
+  const prix = document.getElementById('prix');
   const groupesReponses = estimateur.querySelectorAll('.reponses');
 
   groupesReponses.forEach(groupe => {
@@ -57,8 +58,8 @@ document.addEventListener('DOMContentLoaded', () => {
               });
 
               // Mettre à jour le total
-              const chf = estimateur.querySelector('.chf');
-              if (chf) { chf.textContent = total.toLocaleString('fr-CH').replace(/\s/g, "'"); }
+              if (prix.classList.contains('chf')) { prix.textContent = total.toLocaleString('fr-CH').replace(/\s/g, "'"); }
+              else if (prix.classList.contains('eur')) { prix.textContent = total.toLocaleString('fr-FR'); }
           });
       });
   });
