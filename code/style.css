@@ -1,7 +1,6 @@
 
 /* import police (doit être au début) ------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap'); */
 
 /* variables ------------------------------------------------- */
 :root {
@@ -41,12 +40,12 @@ select {cursor:pointer;}
   }
 
 /* menu ----------------------------------------------------- */
-#menu {position:fixed; z-index:1; width:100%; top:0; left:0; text-align:center; line-height: 115%;  padding:10px 0; background:rgba(0,0,0,0.75); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(20px); }
+#menu {position:fixed; z-index:1; width:100%; top:0; left:0; text-align:center; line-height: 115%;  padding:10px 0; background:rgba(30,30,32,0.8); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(20px); }
 #menu div {display:inline-block; vertical-align:middle; margin:0 20px; }
 #menu img {display:inline-block; height:25px; vertical-align:middle; margin:0 20px;}
 #menu div:hover{color:var(--blue); cursor:pointer; }
 
-#menumobile { display:none; position:fixed; height:45px; width:100%; top:0; left:0; z-index:2; background:rgba(0,0,0,0.75); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(20px);}
+#menumobile { display:none; position:fixed; height:45px; width:100%; top:0; left:0; z-index:2; background:rgba(30,30,32,0.8); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(20px);}
 #menumobile #logo {height:25px; position:fixed; top:10px; left:20px;}
 #menumobile #open {height:25px; position:fixed; top:10px; right:20px; }
 
@@ -71,7 +70,7 @@ select {cursor:pointer;}
 #lead .cgv a {text-decoration:underline;}
 
 /* siteweb ------------------------------------------------ */
-#siteweb {width:100%; max-width:1300px; margin: 60px auto 0 auto; text-align:center; }
+#siteweb {width:100%; max-width:1300px; margin: 70px auto 0 auto; text-align:center; }
 #siteweb .grandtitre { width:550px; text-align:center; font-size:55px; margin:50px 45px 50px 0; line-height: 110%;vertical-align:middle; display:inline-block; }
 #siteweb #image {width:130px; display:inline-block; vertical-align:middle; margin:30px 0; }
 #siteweb .bloc {position:relative; display:inline-block; width:370px; margin:15px; border:solid 4px white; vertical-align:top; border-radius:20px; text-align:center;  }
@@ -120,7 +119,7 @@ select {cursor:pointer;}
 
 /* dev ------------------------------------------------- */
 #dev {width:100%; text-align:center; }
-#dev .grandtitre { text-align:center; font-size:55px; width:570px; margin:130px auto 100px auto; line-height: 110%;  }
+#dev .grandtitre { text-align:center; font-size:55px; width:570px; margin:140px auto 100px auto; line-height: 110%;  }
 
 @media screen and (max-width: 700px) { 
   #dev .grandtitre {width:80%; font-size:40px; margin:100px auto 40px auto; }
