@@ -167,7 +167,7 @@ select {cursor:pointer;}
 
 /* texte ----------------------------------------------- */
 #texte {width:800px; margin-left:auto; margin-right:auto; text-align:left; }
-#texte .grandtitre {font-size:50px; text-align:left; padding:0; margin:120px 0 70px 0; line-height:110%;}
+#texte .grandtitre {font-size:50px; text-align:left; padding:0; margin:130px 0 70px 0; line-height:110%;}
 #texte .titre {font-size:30px; text-align:left; padding:0; margin:70px 0 20px 0;  line-height:110%;}
 #texte .texte {font-size:16px; text-align:left; padding:0; margin:15px 0; font-weight:400; }
 #texte a {color:var(--blue);}
