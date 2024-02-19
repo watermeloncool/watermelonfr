@@ -40,12 +40,12 @@ select {cursor:pointer;}
   }
 
 /* menu ----------------------------------------------------- */
-#menu {position:fixed; z-index:1; width:100%; top:0; left:0; text-align:center; line-height: 115%;  padding:10px 0; background:rgba(30,30,32,0.8); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(20px); }
+#menu {position:fixed; z-index:1; width:100%; top:0; left:0; text-align:center; line-height: 115%;  padding:10px 0; background:rgba(25,25,27,0.8); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(20px); }
 #menu div {display:inline-block; vertical-align:middle; margin:0 20px; }
 #menu img {display:inline-block; height:25px; vertical-align:middle; margin:0 20px;}
 #menu div:hover{color:var(--blue); cursor:pointer; }
 
-#menumobile { display:none; position:fixed; height:45px; width:100%; top:0; left:0; z-index:2; background:rgba(30,30,32,0.8); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(20px);}
+#menumobile { display:none; position:fixed; height:45px; width:100%; top:0; left:0; z-index:2; background:rgba(25,25,27,0.8); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(20px);}
 #menumobile #logo {height:25px; position:fixed; top:10px; left:20px;}
 #menumobile #open {height:25px; position:fixed; top:10px; right:20px; }
 
@@ -109,7 +109,7 @@ select {cursor:pointer;}
 #siteweb .bloc.six .btn {background:rgb(236, 195, 159); color:black; }
 
 @media screen and (max-width: 800px) { 
-  #siteweb {margin-top:40px;}
+  #siteweb {margin-top:50px;}
   #siteweb .grandtitre {width:65%; margin:10% 5% 10% 0; font-size:8vw; }
   #siteweb #image {width:20%; margin:10% 0 10% 0; }
 #siteweb .bloc {width:90%; margin: 0 0 10% 0; }
@@ -122,7 +122,7 @@ select {cursor:pointer;}
 #dev .grandtitre { text-align:center; font-size:55px; width:570px; margin:140px auto 100px auto; line-height: 110%;  }
 
 @media screen and (max-width: 700px) { 
-  #dev .grandtitre {width:80%; font-size:40px; margin:100px auto 40px auto; }
+  #dev .grandtitre {width:80%; font-size:40px; margin:110px auto 40px auto; }
   }
 
 
