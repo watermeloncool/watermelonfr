@@ -1,6 +1,7 @@
+
 /* import police (doit être au début) ------------------------- */
-/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap'); */
 
 /* variables ------------------------------------------------- */
 :root {
@@ -14,7 +15,7 @@
 
 /* global ------------------------------------------------- */
 :root{background:black;}
-body,html{ background-color: black; background: linear-gradient(black 0%, var(--dark) 300px) ; color:white; font-family:'Roboto', Helvetica, Arial, sans-serif; font-size:15px; font-weight:700; scroll-behavior: smooth; margin:0; padding:0; line-height: 155%;}
+body,html{ background-color: black; background: linear-gradient(black 0%, var(--dark) 300px) ; color:white; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size:15px; font-weight:700; scroll-behavior: smooth; margin:0; padding:0; line-height: 155%;}
 a{color:white; text-decoration:none; cursor:pointer; }
 a:hover {cursor:pointer !important;}
 /* input, select, textarea { -webkit-appearance: none; -moz-appearance: none; appearance: none; border:0; margin:0; font-family:'Roboto', Helvetica, Arial, sans-serif; padding:10px 15px; box-sizing: border-box; border-radius:10px; background:white; color: var(--dark); font-size:16px; font-weight:700;} */
@@ -71,14 +72,12 @@ select {cursor:pointer;}
 
 /* siteweb ------------------------------------------------ */
 #siteweb {width:100%; max-width:1300px; margin: 60px auto 0 auto; text-align:center; }
-#siteweb .grandtitre { width:550px; text-align:center; font-size:55px; margin-right:45px; line-height: 110%;vertical-align:middle; display:inline-block; }
+#siteweb .grandtitre { width:550px; text-align:center; font-size:55px; margin:50px 45px 50px 0; line-height: 110%;vertical-align:middle; display:inline-block; }
 #siteweb #image {width:130px; display:inline-block; vertical-align:middle; margin:30px 0; }
 #siteweb .bloc {position:relative; display:inline-block; width:370px; margin:15px; border:solid 4px white; vertical-align:top; border-radius:20px; text-align:center;  }
-#siteweb .bloc .soustitre { margin:20px 0 30px 20px; width:200px; /*height:100px;*/ text-align:left; font-size:30px; line-height: 102%; }
+#siteweb .bloc .soustitre { margin:20px 0 30px 20px; width:200px; text-align:left; font-size:30px; line-height: 102%; }
 #siteweb .prix{position:absolute; top:3px; right:0; display:inline-block; margin:20px; text-align:right; font-size:20px; }
-#siteweb .bloc .derouler {margin-left:-20px; }
-#siteweb .bloc .derouler .top {padding:10px 15px 10px 20px; }
-#siteweb ul{font-weight:500; margin:0 40px; padding:0; margin-right:20px; text-align:left; /*height:500px;*/ }
+#siteweb ul{font-weight:500; margin:0 40px; padding:0; margin-right:20px; text-align:left; }
 #siteweb li{margin:7px 0;}
 #siteweb .cgv {margin:0 20px 20px 20px; font-size:12px; font-weight:500;}
 #siteweb .cgv a {border-bottom:solid 2px white;}
@@ -112,9 +111,11 @@ select {cursor:pointer;}
 
 @media screen and (max-width: 800px) { 
   #siteweb {margin-top:40px;}
-  #siteweb .grandtitre {width:60%; margin-right:5%; font-size:8vw; }
-  #siteweb #image {width:25%; }
-#siteweb .bloc {width:90%;}
+  #siteweb .grandtitre {width:65%; margin:10% 5% 10% 0; font-size:8vw; }
+  #siteweb #image {width:20%; margin:10% 0 10% 0; }
+#siteweb .bloc {width:90%; margin: 0 0 10% 0; }
+#siteweb .bloc .soustitre {font-size:6vw; line-height:6vw; width:60%; margin:5% 5% 30px 5%; }
+#siteweb .bloc .prix {font-size:4vw; line-height:4vw; width:25%; margin:5% 5% 30px 5%; }
 }
 
 /* dev ------------------------------------------------- */
@@ -197,7 +198,7 @@ select {cursor:pointer;}
 #footer img {width:20px; padding-right:5px; vertical-align:middle;}
 #footer .lang {border:solid 2px var(--grey); border-radius:25px; vertical-align:middle; display:inline-block; }
 #footer .lang img {width:17px; margin:8px 5px 8px 15px; vertical-align:middle; }
-#footer .lang .texte {margin:8px 20px 8px 0; display:inline-block; vertical-align:middle; }
+#footer .lang .texte {margin:8px 17px 8px 0; display:inline-block; vertical-align:middle; }
 #footer .lang:hover {color:white; border:solid 2px white; }
 
 @media screen and (max-width: 850px) { 
