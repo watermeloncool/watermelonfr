@@ -26,7 +26,7 @@ select {cursor:pointer;}
 .titre{font-size:30px; padding:100px 0 30px 0; width:100%; text-align:center;  }
 
 .derouler {background:rgb(40, 40, 42); margin-bottom:10px; border-radius:15px;}
-.derouler .top {display:flex; justify-content: space-between; align-items: center; padding:15px 0; /* -webkit-user-select: none; -ms-user-select: none; user-select: none;*/ }
+.derouler .top {display:flex; justify-content: space-between; align-items: center; padding:15px 0;  -webkit-user-select: none; -ms-user-select: none; user-select: none; }
 .derouler .top:hover { cursor:pointer; }
 .derouler .top span {text-align:left; margin-right:10px;}
 .derouler .image {vertical-align:middle; width:15px;}
