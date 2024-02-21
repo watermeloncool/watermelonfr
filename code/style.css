@@ -160,7 +160,7 @@ select {cursor:pointer;}
 @media screen and (max-width: 700px) {
   #contact {margin-top:0;}
 #contact .grandtitre {width:55%; margin:10% 5% 10% 0; font-size:9vw; }
-#contact #image {width:25%; margin:5% 0 5% 0; }
+#contact #image {width:25%; margin:10% 0 10% 0; }
 #form { width:90% !important; }
 #contact .feedback {  width:90%; }
 }
