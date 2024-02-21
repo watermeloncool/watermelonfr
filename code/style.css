@@ -44,7 +44,7 @@ select {cursor:pointer;}
 #menu { z-index:1; width:100%; top:0; left:0; text-align:center; line-height: 115%;  padding:10px 0; background:black;  }
 #menu div {display:inline-block; vertical-align:middle; margin:0 20px; }
 #menu img {display:inline-block; height:25px; vertical-align:middle; margin:0 20px;}
-#menu div:hover{color:var(--blue); cursor:pointer; }
+#menu div:hover{opacity:0.8; cursor:pointer; }
 
 #menumobile { display:none; position:relative;  height:45px; width:100%; top:0; left:0; z-index:2; background:black; }
 #menumobile #logo {height:25px; position:absolute; top:10px; left:20px;}
@@ -83,7 +83,7 @@ select {cursor:pointer;}
 #siteweb .cgv a {border-bottom:solid 2px white;}
 #siteweb .btn {display:block; margin:30px 20px 10px 20px; padding: 15px 0; }
 #siteweb li a {border-bottom:solid 2px white;}
-#siteweb a:hover {color:var(--blue); border-color:var(--blue);}
+#siteweb a:hover {border-bottom:solid 2px transparent; border-color:var(--blue);}
 
 #siteweb .bloc.un {border-color:rgb(255, 210, 215);  }
 #siteweb .bloc.un span {color:rgb(255, 210, 215);  }
@@ -171,8 +171,8 @@ select {cursor:pointer;}
 #texte .grandtitre {font-size:50px; text-align:left; padding:0; margin:90px 0 70px 0; line-height:110%; text-shadow: rgba(0, 0, 0, 0.65) 0px 4px 14px;}
 #texte .titre {font-size:30px; text-align:left; padding:0; margin:70px 0 20px 0;  line-height:110%;}
 #texte .texte {font-size:16px; text-align:left; padding:0; margin:15px 0; font-weight:400; }
-#texte a {color:var(--blue);}
-#texte a:hover {color:white;}
+#texte a {border-bottom:solid 2px white;}
+#texte a:hover {border-bottom:solid 2px transparent; cursor:pointer;}
 
 @media screen and (max-width: 900px) { 
   #texte {width:90%; }
@@ -194,7 +194,7 @@ select {cursor:pointer;}
 #footer{ background: black ; text-align:center; margin-top:100px; }
 #footer .bloc{display:inline-block; vertical-align:top; text-align:left; margin:50px 70px; vertical-align:top; text-align:left;}
 #footer .adresse {color:var(--grey); font-weight:500;}
-#footer a:hover{cursor:pointer; color:var(--blue);}
+#footer a:hover{cursor:pointer; opacity:0.8;}
 #footer img {width:20px; padding-right:5px; vertical-align:middle;}
 #footer .lang {border:solid 2px var(--grey); border-radius:25px; vertical-align:middle; display:inline-block; }
 #footer .lang img {width:17px; margin:8px 5px 8px 15px; vertical-align:middle; }
