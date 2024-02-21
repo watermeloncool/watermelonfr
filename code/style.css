@@ -146,7 +146,7 @@ select {cursor:pointer;}
 
 /* contact -------------------------------------------- */
 #contact input, #contact select, #contact textarea { -webkit-appearance: none; -moz-appearance: none; appearance: none; border:0; margin:0; font-family:'Roboto', Helvetica, Arial, sans-serif; padding:15px 15px; box-sizing: border-box; border-radius:10px; background:white; color: black; font-size:15px; font-weight:700; }
-#contact {width:100%; margin:70px auto; text-align:center;  }
+#contact {width:100%; margin:70px auto -50px auto; text-align:center;  }
 #contact .grandtitre { width:400px; vertical-align:middle; display:inline-block; margin:50px 45px 50px 0; font-size:55px; line-height: 105%;  }
 #contact #image {width:145px; display:inline-block; vertical-align:middle; margin:30px 0; }
 #contact #form { width:650px; margin-left:auto; margin-right:auto; }
