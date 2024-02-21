@@ -13,8 +13,8 @@
   }
 
 /* global ------------------------------------------------- */
-:root{background:black;}
-body,html{ background-color: black; background: linear-gradient(rgb(255, 210, 215) 50px, black 250px) ; color:white; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size:15px; font-weight:700; scroll-behavior: smooth; margin:0; padding:0; line-height: 155%;}
+:root{background:var(--dark);}
+body,html{ background-color: var(--dark); background: linear-gradient(rgb(255, 210, 215) 50px, var(--dark) 250px) ; color:white; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size:15px; font-weight:700; scroll-behavior: smooth; margin:0; padding:0; line-height: 155%;}
 a{color:white; text-decoration:none; cursor:pointer; }
 a:hover {cursor:pointer !important;}
 /* input, select, textarea { -webkit-appearance: none; -moz-appearance: none; appearance: none; border:0; margin:0; font-family:'Roboto', Helvetica, Arial, sans-serif; padding:10px 15px; box-sizing: border-box; border-radius:10px; background:white; color: var(--dark); font-size:16px; font-weight:700;} */
@@ -146,7 +146,7 @@ select {cursor:pointer;}
 
 /* contact -------------------------------------------- */
 #contact input, #contact select, #contact textarea { -webkit-appearance: none; -moz-appearance: none; appearance: none; border:0; margin:0; font-family:'Roboto', Helvetica, Arial, sans-serif; padding:15px 15px; box-sizing: border-box; border-radius:10px; background:white; color: black; font-size:15px; font-weight:700; }
-#contact {width:100%; margin:0 auto -50px auto; text-align:center;  }
+#contact {width:100%; margin:20px auto -50px auto; text-align:center;  }
 #contact .grandtitre { width:400px; vertical-align:middle; display:inline-block; margin:50px 45px 50px 0; font-size:55px; line-height: 105%; text-shadow: rgba(0, 0, 0, 0.65) 0px 4px 14px;  }
 #contact #image {width:145px; display:inline-block; vertical-align:middle; margin:30px 0; }
 #contact #form { width:650px; margin-left:auto; margin-right:auto; }
@@ -190,7 +190,7 @@ select {cursor:pointer;}
 
 
 /* footer ------------------------------------------------ */
-#footer{ background: var(--dark) ; text-align:center; margin-top:100px; }
+#footer{ background: black ; text-align:center; margin-top:100px; }
 #footer .bloc{display:inline-block; vertical-align:top; text-align:left; margin:50px 70px; vertical-align:top; text-align:left;}
 #footer .adresse {color:var(--grey); font-weight:500;}
 #footer a:hover{cursor:pointer; color:var(--blue);}
@@ -206,4 +206,4 @@ select {cursor:pointer;}
 }
 
 /* copyright ----------------------------------------------- */
-#copyright { background:var(--dark);  width:100%; padding-bottom:20px; text-align:center; line-height: 100%; font-size:12px; font-weight:500; }
+#copyright { background:black;  width:100%; padding-bottom:20px; text-align:center; line-height: 100%; font-size:12px; font-weight:500; }
