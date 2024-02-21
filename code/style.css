@@ -14,7 +14,7 @@
 
 /* global ------------------------------------------------- */
 :root{background:black;}
-body,html{ background-color: black; background: linear-gradient(black 0%, var(--dark) 300px) ; color:white; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size:15px; font-weight:700; scroll-behavior: smooth; margin:0; padding:0; line-height: 155%;}
+body,html{ background-color: black; background: linear-gradient(rgb(255, 210, 215) 50px, black 250px) ; color:white; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size:15px; font-weight:700; scroll-behavior: smooth; margin:0; padding:0; line-height: 155%;}
 a{color:white; text-decoration:none; cursor:pointer; }
 a:hover {cursor:pointer !important;}
 /* input, select, textarea { -webkit-appearance: none; -moz-appearance: none; appearance: none; border:0; margin:0; font-family:'Roboto', Helvetica, Arial, sans-serif; padding:10px 15px; box-sizing: border-box; border-radius:10px; background:white; color: var(--dark); font-size:16px; font-weight:700;} */
@@ -40,14 +40,14 @@ select {cursor:pointer;}
   }
 
 /* menu ----------------------------------------------------- */
-#menu {position:fixed; z-index:1; width:100%; top:0; left:0; text-align:center; line-height: 115%;  padding:10px 0; background:rgba(25,25,27,0.8); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(20px); }
+#menu { z-index:1; width:100%; top:0; left:0; text-align:center; line-height: 115%;  padding:10px 0; background:black;  }
 #menu div {display:inline-block; vertical-align:middle; margin:0 20px; }
 #menu img {display:inline-block; height:25px; vertical-align:middle; margin:0 20px;}
 #menu div:hover{color:var(--blue); cursor:pointer; }
 
-#menumobile { display:none; position:fixed; height:45px; width:100%; top:0; left:0; z-index:2; background:rgba(25,25,27,0.8); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(20px);}
-#menumobile #logo {height:25px; position:fixed; top:10px; left:20px;}
-#menumobile #open {height:25px; position:fixed; top:10px; right:20px; }
+#menumobile { display:none; position:relative;  height:45px; width:100%; top:0; left:0; z-index:2; background:black; }
+#menumobile #logo {height:25px; position:absolute; top:10px; left:20px;}
+#menumobile #open {height:25px; position:absolute; top:10px; right:20px; }
 
 #sousmenumobile {display:none; position:fixed; background:black; top:0; left:0; z-index:3; text-align:left; width:100%; height:100vh; overflow: hidden; padding:40px 0;}
 #sousmenumobile div {margin:30px 40px; font-size:25px;  color:white; line-height:110%;}
@@ -70,8 +70,8 @@ select {cursor:pointer;}
 #lead .cgv a {text-decoration:underline;}
 
 /* siteweb ------------------------------------------------ */
-#siteweb {width:100%; max-width:1300px; margin: 70px auto 0 auto; text-align:center; }
-#siteweb .grandtitre { width:550px; text-align:center; font-size:55px; margin:50px 45px 50px 0; line-height: 110%;vertical-align:middle; display:inline-block; }
+#siteweb {width:100%; max-width:1300px; margin: 20px auto 0 auto; text-align:center; }
+#siteweb .grandtitre { width:550px; text-align:center; font-size:55px; margin:50px 45px 50px 0; line-height: 110%;vertical-align:middle; display:inline-block; text-shadow: rgba(0, 0, 0, 0.65) 0px 4px 14px; }
 #siteweb #image {width:130px; display:inline-block; vertical-align:middle; margin:30px 0; }
 #siteweb .bloc {position:relative; display:inline-block; width:370px; margin:15px; border:solid 4px white; vertical-align:top; border-radius:20px; text-align:center;  }
 #siteweb .bloc .soustitre { margin:20px 0 30px 20px; width:200px; text-align:left; font-size:30px; line-height: 102%; }
@@ -109,7 +109,7 @@ select {cursor:pointer;}
 #siteweb .bloc.six .btn {background:rgb(236, 195, 159); color:black; }
 
 @media screen and (max-width: 800px) { 
-  #siteweb {margin-top:50px;}
+  #siteweb {margin-top:0;}
   #siteweb .grandtitre {width:65%; margin:10% 5% 10% 0; font-size:8vw; }
   #siteweb #image {width:20%; margin:10% 0 10% 0; }
 #siteweb .bloc {width:90%; margin: 0 0 10% 0; }
@@ -119,10 +119,10 @@ select {cursor:pointer;}
 
 /* dev ------------------------------------------------- */
 #dev {width:100%; text-align:center; }
-#dev .grandtitre { text-align:center; font-size:55px; width:570px; margin:140px auto 100px auto; line-height: 110%;  }
+#dev .grandtitre { text-align:center; font-size:55px; width:570px; margin:100px auto 100px auto; line-height: 110%; text-shadow: rgba(0, 0, 0, 0.65) 0px 4px 14px;  }
 
 @media screen and (max-width: 700px) { 
-  #dev .grandtitre {width:80%; font-size:40px; margin:110px auto 40px auto; }
+  #dev .grandtitre {width:80%; font-size:40px; margin:70px auto 40px auto; }
   }
 
 
@@ -146,8 +146,8 @@ select {cursor:pointer;}
 
 /* contact -------------------------------------------- */
 #contact input, #contact select, #contact textarea { -webkit-appearance: none; -moz-appearance: none; appearance: none; border:0; margin:0; font-family:'Roboto', Helvetica, Arial, sans-serif; padding:15px 15px; box-sizing: border-box; border-radius:10px; background:white; color: black; font-size:15px; font-weight:700; }
-#contact {width:100%; margin:70px auto -50px auto; text-align:center;  }
-#contact .grandtitre { width:400px; vertical-align:middle; display:inline-block; margin:50px 45px 50px 0; font-size:55px; line-height: 105%;  }
+#contact {width:100%; margin:0 auto -50px auto; text-align:center;  }
+#contact .grandtitre { width:400px; vertical-align:middle; display:inline-block; margin:50px 45px 50px 0; font-size:55px; line-height: 105%; text-shadow: rgba(0, 0, 0, 0.65) 0px 4px 14px;  }
 #contact #image {width:145px; display:inline-block; vertical-align:middle; margin:30px 0; }
 #contact #form { width:650px; margin-left:auto; margin-right:auto; }
 #form .email {width:100%; margin:0 0 10px 0; }
@@ -157,7 +157,7 @@ select {cursor:pointer;}
 #contact #form div {text-align:left; margin:25px 0; font-size:13px; font-weight:400; }
 
 @media screen and (max-width: 700px) {
-  #contact {margin-top:50px;}
+  #contact {margin-top:0;}
 #contact .grandtitre {width:50%; margin:10% 5% 10% 0; font-size:9vw; }
 #contact #image {width:30%; margin:5% 0 5% 0; }
 #form { width:90% !important; }
@@ -167,7 +167,7 @@ select {cursor:pointer;}
 
 /* texte ----------------------------------------------- */
 #texte {width:800px; margin-left:auto; margin-right:auto; text-align:left; }
-#texte .grandtitre {font-size:50px; text-align:left; padding:0; margin:130px 0 70px 0; line-height:110%;}
+#texte .grandtitre {font-size:50px; text-align:left; padding:0; margin:90px 0 70px 0; line-height:110%; text-shadow: rgba(0, 0, 0, 0.65) 0px 4px 14px;}
 #texte .titre {font-size:30px; text-align:left; padding:0; margin:70px 0 20px 0;  line-height:110%;}
 #texte .texte {font-size:16px; text-align:left; padding:0; margin:15px 0; font-weight:400; }
 #texte a {color:var(--blue);}
@@ -175,7 +175,7 @@ select {cursor:pointer;}
 
 @media screen and (max-width: 900px) { 
   #texte {width:90%; }
-  #texte .grandtitre {margin-top:100px;}
+  #texte .grandtitre {margin-top:60px;}
   }
 
 
@@ -190,7 +190,7 @@ select {cursor:pointer;}
 
 
 /* footer ------------------------------------------------ */
-#footer{ background: black ; text-align:center; margin-top:100px; }
+#footer{ background: var(--dark) ; text-align:center; margin-top:100px; }
 #footer .bloc{display:inline-block; vertical-align:top; text-align:left; margin:50px 70px; vertical-align:top; text-align:left;}
 #footer .adresse {color:var(--grey); font-weight:500;}
 #footer a:hover{cursor:pointer; color:var(--blue);}
@@ -206,4 +206,4 @@ select {cursor:pointer;}
 }
 
 /* copyright ----------------------------------------------- */
-#copyright { background:black;  width:100%; padding-bottom:20px; text-align:center; line-height: 100%; font-size:12px; font-weight:500; }
+#copyright { background:var(--dark);  width:100%; padding-bottom:20px; text-align:center; line-height: 100%; font-size:12px; font-weight:500; }
