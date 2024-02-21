@@ -36,6 +36,7 @@ select {cursor:pointer;}
 .derouler .contenu, .derouler .cacher {display:none;}
 
 @media screen and (max-width: 600px) { 
+  body,html{ background: linear-gradient(rgb(255, 210, 215) 50px, var(--dark) 200px) ; }
   .titre {width:80%; line-height:110%; margin-left:auto; margin-right:auto;}
   }
 
