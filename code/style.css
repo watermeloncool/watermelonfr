@@ -115,7 +115,7 @@ select {cursor:pointer;}
 
 @media screen and (max-width: 800px) { 
 #siteweb {margin-top:0;}
-#siteweb .grandtitre {width:90%; font-size:50px;; }
+#siteweb .grandtitre {width:80%; font-size:40px;; }
 #siteweb #portofolio {margin: 30px 0 0 0;}
 #siteweb #portofolio img { height:170px; margin:5px;}
 #siteweb .bloc {width:90%; margin: 0 0 10% 0; }
