@@ -1,6 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
-/* import police (doit être au début) ------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 /* variables ------------------------------------------------- */
 :root {
@@ -14,44 +13,44 @@
 
 /* global ------------------------------------------------- */
 :root{background:black;}
-body,html{ background-color: var(--dark); background: linear-gradient(rgb(255, 210, 215) 50px, var(--dark) 250px) ; color:white; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-size:15px; font-weight:700; scroll-behavior: smooth; margin:0; padding:0; line-height: 155%;}
+body,html{ background-color: var(--dark); /*background: linear-gradient(rgb(255, 210, 215) 80px, var(--dark) 250px) ;*/ color:white; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; scroll-behavior: smooth; margin:0; padding:0; font-size:15px; font-weight:400; line-height:170%;   }
 a{color:white; text-decoration:none; cursor:pointer; }
 a:hover {cursor:pointer !important;}
-/* input, select, textarea { -webkit-appearance: none; -moz-appearance: none; appearance: none; border:0; margin:0; font-family:'Roboto', Helvetica, Arial, sans-serif; padding:10px 15px; box-sizing: border-box; border-radius:10px; background:white; color: var(--dark); font-size:16px; font-weight:700;} */
+/* input, select, textarea { -webkit-appearance: none; -moz-appearance: none; appearance: none; border:0; margin:0; font-family:'Roboto', Helvetica, Arial, sans-serif; padding:10px 15px; box-sizing: border-box; border-radius:10px; background:white; color: var(--dark); font-size:16px; } */
 select {cursor:pointer;}
-::placeholder {color: grey; font-weight:500;}
-.btn{ background:var(--blue); color:white; border-radius:25px; cursor:pointer; line-height: 100%; text-align:center; font-size:16px; display:block; padding: 15px 30px; display:inline-block; }
+::placeholder {color: grey; }
+.btn{ background:var(--blue); color:white; border-radius:25px; cursor:pointer;  text-align:center; font-size:16px; display:block; padding: 15px 30px; display:inline-block; font-weight:700; }
 .btn:hover{background:white !important; color:black !important; cursor:pointer !important; }
 .opacite {opacity:0.35;}
-.titre{font-size:30px; padding:100px 0 30px 0; width:100%; text-align:center;  }
+.titre{font-size:40px; padding:80px 0 40px 0; width:100%; text-align:center; font-family: "Lora", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif ; }
 
 .derouler {background:rgb(40, 40, 42); margin-bottom:10px; border-radius:15px;}
 .derouler .top {display:flex; justify-content: space-between; align-items: center; padding:15px 0;  -webkit-user-select: none; -ms-user-select: none; user-select: none; }
 .derouler .top:hover { cursor:pointer; }
 .derouler .top span {text-align:left; margin-right:10px;}
 .derouler .image {vertical-align:middle; width:15px;}
-.derouler .contenu {padding:0 15px 10px 15px; text-align:left; font-weight:500; }
+.derouler .contenu {padding:0 15px 10px 15px; text-align:left; }
 .derouler .contenu .radio {background:transparent; border:solid 2px white; color:white; padding:10px 15px; margin:15px 0; }
 .derouler .contenu .radio.selected { border:solid 2px var(--blue); }
 .derouler .contenu, .derouler .cacher {display:none;}
 
 @media screen and (max-width: 600px) { 
-  body,html{ background: linear-gradient(rgb(255, 210, 215) 50px, var(--dark) 200px) ; }
-  .titre {width:80%; line-height:110%; margin-left:auto; margin-right:auto;}
+  body,html{ /* background: linear-gradient(rgb(255, 210, 215) 50px, var(--dark) 200px) ;*/ }
+  .titre {width:80%;  margin-left:auto; margin-right:auto;}
   }
 
 /* menu ----------------------------------------------------- */
-#menu { z-index:1; width:100%; top:0; left:0; text-align:center; line-height: 115%;  padding:10px 0; background:black;  }
+#menu { z-index:1; width:100%; top:0; left:0; text-align:center; padding:15px 0; font-weight:600; }
 #menu div {display:inline-block; vertical-align:middle; margin:0 20px; }
 #menu img {display:inline-block; height:25px; vertical-align:middle; margin:0 20px;}
 #menu div:hover{opacity:0.8; cursor:pointer; }
 
-#menumobile { display:none; position:relative;  height:45px; width:100%; top:0; left:0; z-index:2; background:black; }
+#menumobile { display:none; position:relative;  height:45px; width:100%; top:0; left:0; z-index:2; }
 #menumobile #logo {height:25px; position:absolute; top:10px; left:20px;}
 #menumobile #open {height:25px; position:absolute; top:10px; right:20px; }
 
-#sousmenumobile {display:none; position:fixed; background:black; top:0; left:0; z-index:3; text-align:left; width:100%; height:100vh; overflow: hidden; padding:40px 0;}
-#sousmenumobile div {margin:30px 40px; font-size:25px;  color:white; line-height:110%;}
+#sousmenumobile {display:none; position:fixed; background:var(--dark); top:0; left:0; z-index:3; text-align:left; width:100%; height:100vh; overflow: hidden; padding:40px 0;}
+#sousmenumobile div {margin:30px 40px; font-size:35px; font-weight:600; color:white; }
 #sousmenumobile #close {position:fixed; top:10px; right:20px; height:25px; }
 
 @media screen and (max-width: 600px) { 
@@ -61,29 +60,34 @@ select {cursor:pointer;}
 
 /* lead ------------------------------------------------- */
 #lead {position:relative; width:1100px; text-align:center; margin:90px auto 100px auto; }
-#lead .grandtitre{text-align:left; width:550px; font-size:60px; line-height: 110%;  }
-#lead .soustitre{text-align:left; width:550px; padding-top:30px; padding-bottom:40px; font-size:18px; font-weight:400; line-height: 155%; }
+#lead .grandtitre{text-align:left; width:550px; font-size:60px;   }
+#lead .soustitre{text-align:left; width:550px; padding-top:30px; padding-bottom:40px; font-size:18px;}
 #lead #image{ position:absolute; top:0; right:0; width:480px; display:inline-block; vertical-align:top; }
 #lead .form {width:350px; }
 #lead .form input {width:100%; margin-bottom:10px; padding: 12px 15px;}
 #lead .btn {width:100%; }
-#lead .cgv {display:block; margin:5px 0 0 0; font-size:12px; font-weight:500;}
+#lead .cgv {display:block; margin:5px 0 0 0; font-size:12px; }
 #lead .cgv a {text-decoration:underline;}
 
 /* siteweb ------------------------------------------------ */
-#siteweb {width:100%; max-width:1300px; margin: 20px auto 0 auto; text-align:center; }
-#siteweb .grandtitre { width:550px; text-align:center; font-size:55px; margin:50px 45px 50px 0; line-height: 110%;vertical-align:middle; display:inline-block; text-shadow: rgba(0, 0, 0, 0.65) 0px 4px 14px; }
-#siteweb #image {width:180px; display:inline-block; vertical-align:middle; margin:30px 0; }
-#siteweb .bloc {position:relative; display:inline-block; width:370px; margin:15px; border:solid 4px white; vertical-align:top; border-radius:20px; text-align:center;  }
-#siteweb .bloc .soustitre { margin:20px 0 30px 20px; width:200px; text-align:left; font-size:30px; line-height: 102%; }
-#siteweb .prix{position:absolute; top:3px; right:0; display:inline-block; margin:20px; text-align:right; font-size:20px; }
-#siteweb ul{font-weight:500; margin:0 40px; padding:0; margin-right:20px; text-align:left; }
+#siteweb {width:100%; margin: 0 auto 0 auto; text-align:center; }
+#siteweb .grandtitre { font-size:55px;  width:750px; text-align:center; margin:60px auto 80px auto; line-height:110%; font-family: "Lora";  }
+
+#siteweb #portofolio {overflow-x: auto; white-space: nowrap; width: 100vw; box-sizing: border-box; padding:0 10px; margin: 0 0 15px 0; scrollbar-width: none; }
+#siteweb #portofolio::-webkit-scrollbar {display: none; }
+#siteweb #portofolio img {height:225px; width:auto; margin:0 10px; border-radius:10px; display: inline-block; }
+
+#siteweb #image {width:180px; display:inline-block; vertical-align:middle; margin:50px 0; }
+#siteweb .bloc {position:relative; display:inline-block; width:370px; margin:0 15px 30px 15px; border:solid 4px white; vertical-align:top; border-radius:20px; text-align:center;  }
+#siteweb .bloc .soustitre { margin:20px 0 30px 20px; width:200px; text-align:left; font-size:30px; font-family: "Lora" ; line-height:110%; }
+#siteweb .prix{position:absolute; top:3px; right:0; display:inline-block; margin:20px; text-align:right; font-size:20px; font-weight:600; }
+#siteweb ul{ margin:0 40px; padding:0; margin-right:20px; text-align:left;  }
 #siteweb li{margin:7px 0;}
-#siteweb .cgv {margin:0 20px 20px 20px; font-size:12px; font-weight:500;}
+#siteweb .cgv {margin:0 20px 20px 20px; font-size:12px; }
 #siteweb .cgv a {border-bottom:solid 2px white;}
 #siteweb .btn {display:block; margin:30px 20px 10px 20px; padding: 15px 0; }
 #siteweb li a {border-bottom:solid 2px white;}
-#siteweb a:hover {border-bottom:solid 2px transparent; border-color:var(--blue);}
+#siteweb a:hover {opacity:0.8; }
 
 #siteweb .bloc.un {border-color:rgb(255, 210, 215);  }
 #siteweb .bloc.un span {color:rgb(255, 210, 215);  }
@@ -110,17 +114,21 @@ select {cursor:pointer;}
 #siteweb .bloc.six .btn {background:rgb(236, 195, 159); color:black; }
 
 @media screen and (max-width: 800px) { 
-  #siteweb {margin-top:0;}
-  #siteweb .grandtitre {width:60%; margin:10% 5% 10% 0; font-size:8vw; }
-  #siteweb #image {width:25%; margin:10% 0 10% 0; }
+#siteweb {margin-top:0;}
+#siteweb .grandtitre {width:90%; font-size:50px;; }
+#siteweb #portofolio {margin: 30px 0 0 0;}
+#siteweb #portofolio img { height:170px; margin:5px;}
 #siteweb .bloc {width:90%; margin: 0 0 10% 0; }
-#siteweb .bloc .soustitre {font-size:6vw; line-height:6vw; width:60%; margin:5% 5% 30px 5%; }
-#siteweb .bloc .prix {font-size:4vw; line-height:4vw; width:25%; margin:5% 5% 30px 5%; }
+#siteweb .bloc .soustitre {font-size:6vw;  width:60%; margin:5% 5% 30px 5%; }
+#siteweb .bloc .prix {font-size:4vw; width:25%; margin:5% 5% 30px 5%; }
 }
+
+/* portofolio ------------------------------------------------------*/
+
 
 /* dev ------------------------------------------------- */
 #dev {width:100%; text-align:center; }
-#dev .grandtitre { text-align:center; font-size:55px; width:570px; margin:100px auto 100px auto; line-height: 110%; text-shadow: rgba(0, 0, 0, 0.65) 0px 4px 14px;  }
+#dev .grandtitre { text-align:center; font-size:55px; width:570px; margin:100px auto 100px auto; text-shadow: rgba(0, 0, 0, 0.65) 0px 4px 14px;  }
 
 @media screen and (max-width: 700px) { 
   #dev .grandtitre {width:80%; font-size:40px; margin:70px auto 40px auto; }
@@ -146,16 +154,16 @@ select {cursor:pointer;}
 
 
 /* contact -------------------------------------------- */
-#contact input, #contact select, #contact textarea { -webkit-appearance: none; -moz-appearance: none; appearance: none; border:0; margin:0; font-family:'Roboto', Helvetica, Arial, sans-serif; padding:15px 15px; box-sizing: border-box; border-radius:10px; background:white; color: black; font-size:15px; font-weight:700; }
+#contact input, #contact select, #contact textarea { -webkit-appearance: none; -moz-appearance: none; appearance: none; border:0; margin:0; font-family:'Roboto', Helvetica, Arial, sans-serif; padding:15px 15px; box-sizing: border-box; border-radius:10px; background:white; color: black; font-size:15px;  }
 #contact {width:100%; margin:20px auto -50px auto; text-align:center;  }
-#contact .grandtitre { width:400px; vertical-align:middle; display:inline-block; margin:50px 45px 50px 0; font-size:55px; line-height: 105%; text-shadow: rgba(0, 0, 0, 0.65) 0px 4px 14px;  }
+#contact .grandtitre { width:400px; vertical-align:middle; display:inline-block; margin:50px 45px 50px 0; font-size:55px;  text-shadow: rgba(0, 0, 0, 0.65) 0px 4px 14px;  }
 #contact #image {width:180px; display:inline-block; vertical-align:middle; margin:30px 0; }
 #contact #form { width:650px; margin-left:auto; margin-right:auto; }
 #form .email {width:100%; margin:0 0 10px 0; }
 #form .message {width:100%; height:200px; margin-bottom:10px;}
 #form .btn { background:var(--blue); font-size:16px; color:white; border-radius:25px; padding: 15px 30px; }
-#contact .feedback{ display:none; width:665px; color:var(--green); margin:0 auto; font-weight:400; }
-#contact #form div {text-align:left; margin:25px 0; font-size:13px; font-weight:400; }
+#contact .feedback{ display:none; width:665px; color:var(--green); margin:0 auto;  }
+#contact #form div {text-align:left; margin:25px 0; font-size:13px;  }
 
 @media screen and (max-width: 700px) {
   #contact {margin-top:0;}
@@ -168,9 +176,9 @@ select {cursor:pointer;}
 
 /* texte ----------------------------------------------- */
 #texte {width:800px; margin-left:auto; margin-right:auto; text-align:left; }
-#texte .grandtitre {font-size:50px; text-align:left; padding:0; margin:90px 0 70px 0; line-height:110%; text-shadow: rgba(0, 0, 0, 0.65) 0px 4px 14px;}
-#texte .titre {font-size:30px; text-align:left; padding:0; margin:70px 0 20px 0;  line-height:110%;}
-#texte .texte {font-size:16px; text-align:left; padding:0; margin:15px 0; font-weight:400; }
+#texte .grandtitre {font-size:50px; text-align:left; padding:0; margin:90px 0 70px 0;  text-shadow: rgba(0, 0, 0, 0.65) 0px 4px 14px;}
+#texte .titre {font-size:30px; text-align:left; padding:0; margin:70px 0 20px 0;  }
+#texte .texte {font-size:16px; text-align:left; padding:0; margin:15px 0;  }
 #texte a {border-bottom:solid 2px white;}
 #texte a:hover {border-bottom:solid 2px transparent; cursor:pointer;}
 
@@ -182,7 +190,7 @@ select {cursor:pointer;}
 
 /* faq ------------------------------------------------- */
 #faq .derouler {width:900px; margin-left:auto; margin-right:auto;}
-#faq .derouler .top {font-size:18px; padding:15px 20px;}
+#faq .derouler .top {font-size:17px; padding:15px 20px; font-weight:500;}
 #faq .derouler .contenu {padding:0 20px 15px 20px;}
 
 @media screen and (max-width: 950px) { 
@@ -191,14 +199,13 @@ select {cursor:pointer;}
 
 
 /* footer ------------------------------------------------ */
-#footer{ background: black ; text-align:center; margin-top:100px; }
+#footer{ background: black ; text-align:center; margin-top:100px; font-weight:600; }
 #footer .bloc{display:inline-block; vertical-align:top; text-align:left; margin:50px 70px; vertical-align:top; text-align:left;}
-#footer .adresse {color:var(--grey); font-weight:500;}
 #footer a:hover{cursor:pointer; opacity:0.8;}
 #footer img {width:20px; padding-right:5px; vertical-align:middle;}
 #footer .lang {border:solid 2px var(--grey); border-radius:25px; vertical-align:middle; display:inline-block; }
-#footer .lang img {width:17px; margin:8px 5px 8px 15px; vertical-align:middle; }
-#footer .lang .texte {margin:8px 17px 8px 0; display:inline-block; vertical-align:middle; }
+#footer .lang img {width:17px; margin:8px 5px 9px 15px; vertical-align:middle; }
+#footer .lang .texte {margin:8px 17px 10px 0; display:inline-block; vertical-align:middle; }
 #footer .lang:hover {color:white; border:solid 2px white; }
 
 @media screen and (max-width: 850px) { 
@@ -207,4 +214,4 @@ select {cursor:pointer;}
 }
 
 /* copyright ----------------------------------------------- */
-#copyright { background:black;  width:100%; padding-bottom:20px; text-align:center; line-height: 100%; font-size:12px; font-weight:500; }
+#copyright { background:black;  width:100%; padding-bottom:20px; text-align:center;  font-size:12px;  }
