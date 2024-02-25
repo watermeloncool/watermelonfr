@@ -157,7 +157,7 @@ select {cursor:pointer;}
 /* contact -------------------------------------------- */
 #contact input, #contact select, #contact textarea { -webkit-appearance: none; -moz-appearance: none; appearance: none; border:0; margin:0; padding:15px 15px; box-sizing: border-box; border-radius:10px; background:white; color: black; font-size:15px;  }
 #contact {width:100%; margin:20px auto -50px auto; text-align:center;  }
-#contact .grandtitre { width:400px; vertical-align:middle; display:inline-block; margin:50px 45px 50px 0; font-size:55px;  text-shadow: rgba(0, 0, 0, 0.65) 0px 4px 14px;  }
+#contact .grandtitre { font-size:55px;  width:750px; text-align:center; margin:60px auto 80px auto; line-height:115%; font-family: "Lora";  }
 #contact #image {width:180px; display:inline-block; vertical-align:middle; margin:30px 0; }
 #contact #form { width:650px; margin-left:auto; margin-right:auto; }
 #form .email {width:100%; margin:0 0 10px 0; }
@@ -168,7 +168,7 @@ select {cursor:pointer;}
 
 @media screen and (max-width: 700px) {
   #contact {margin-top:0;}
-#contact .grandtitre {width:55%; margin:10% 5% 10% 0; font-size:9vw; }
+#contact .grandtitre {width:80%; font-size:40px; margin:70px auto 40px auto; }
 #contact #image {width:25%; margin:10% 0 10% 0; }
 #form { width:90% !important; }
 #contact .feedback {  width:90%; }
