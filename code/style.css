@@ -77,7 +77,7 @@ select {cursor:pointer;}
 #siteweb #portofolio {position:relative; left:-10%; width:110%; overflow-x: auto; white-space: nowrap; box-sizing: border-box; padding:0 10px; margin: 0 0 15px 0; scrollbar-width: none; animation: slidein 1s ease-out forwards; }
 #siteweb #portofolio::-webkit-scrollbar {display: none; }
 #siteweb #portofolio img {height:225px; width:auto; margin:0 10px; border-radius:10px; display: inline-block; }
-@keyframes slidein { from {left: -100%; width:200%; } to {left: 0; width:100%; } }
+@keyframes slidein { from {left: -100%; width:200%; opacity:0; } to {left: 0; width:100%; opacity:1; } }
 
 #siteweb #image {width:180px; display:inline-block; vertical-align:middle; margin:50px 0; }
 #siteweb .bloc {position:relative; display:inline-block; width:370px; margin:0 15px 30px 15px; border:solid 4px white; vertical-align:top; border-radius:20px; text-align:center;  }
