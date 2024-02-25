@@ -22,7 +22,7 @@ select {cursor:pointer;}
 .btn{ background:var(--blue); color:white; border-radius:25px; cursor:pointer;  text-align:center; font-size:16px; display:block; padding: 15px 30px; display:inline-block; font-weight:700; }
 .btn:hover{background:white !important; color:black !important; cursor:pointer !important; }
 .opacite {opacity:0.35;}
-.titre{font-size:35px; margin:80px 0 40px 0; width:100%; text-align:center; font-weight:600;  }
+.titre{font-size:32px; margin:80px 0 40px 0; width:100%; text-align:center; font-weight:700;  }
 
 .derouler {background:rgb(40, 40, 42); margin-bottom:10px; border-radius:15px;}
 .derouler .top {display:flex; justify-content: space-between; align-items: center; padding:15px 0;  -webkit-user-select: none; -ms-user-select: none; user-select: none; }
@@ -36,7 +36,7 @@ select {cursor:pointer;}
 
 @media screen and (max-width: 600px) { 
   body,html{ /* background: linear-gradient(rgb(255, 210, 215) 50px, var(--dark) 200px) ;*/ }
-  .titre {width:85%; font-size:30px; margin:50px auto 30px auto;  }
+  .titre {width:85%; margin:50px auto 30px auto;  }
   }
 
 /* menu ----------------------------------------------------- */
@@ -80,9 +80,9 @@ select {cursor:pointer;}
 
 #siteweb #image {width:180px; display:inline-block; vertical-align:middle; margin:50px 0; }
 #siteweb .bloc {position:relative; display:inline-block; width:370px; margin:0 15px 30px 15px; border:solid 4px white; vertical-align:top; border-radius:20px; text-align:center;  }
-#siteweb .bloc .soustitre { margin:20px 0 30px 20px; width:200px; text-align:left; font-size:25px; font-weight:600; line-height:110%; }
-#siteweb .prix{position:absolute; top:3px; right:0; display:inline-block; margin:20px; text-align:right; font-size:20px; font-weight:600; }
-#siteweb ul{ margin:0 40px; padding:0; margin-right:20px; text-align:left;  }
+#siteweb .bloc .soustitre { margin:20px 0 30px 20px; width:200px; text-align:left; font-size:24px; font-weight:700; line-height:110%; }
+#siteweb .prix{position:absolute; top:3px; right:0; display:inline-block; margin:20px; text-align:right; font-size:18px; font-weight:700; }
+#siteweb ul{ margin:0 40px; padding:0; margin-right:20px; font-weight:500; text-align:left;  }
 #siteweb li{margin:7px 0;}
 #siteweb .cgv {margin:0 20px 20px 20px; font-size:12px; }
 #siteweb .cgv a {border-bottom:solid 1px white;}
@@ -157,8 +157,8 @@ select {cursor:pointer;}
 /* contact -------------------------------------------- */
 #contact input, #contact select, #contact textarea { -webkit-appearance: none; -moz-appearance: none; appearance: none; border:0; margin:0; padding:15px 15px; box-sizing: border-box; border-radius:10px; background:white; color: black; font-size:15px;  }
 #contact {width:100%; margin:20px auto -50px auto; text-align:center;  }
-#contact .grandtitre { font-size:55px;  width:750px; text-align:center; margin:60px auto 80px auto; line-height:115%; font-family: "Lora";  }
-#contact #image {width:180px; display:inline-block; vertical-align:middle; margin:30px 0; }
+#contact .grandtitre { font-size:55px;  width:750px; text-align:center; margin:60px auto 40px auto; line-height:115%; font-family: "Lora";  }
+#contact img {width:90%; margin-top:60px; border-radius:10px;  }
 #contact #form { width:650px; margin-left:auto; margin-right:auto; }
 #form .email {width:100%; margin:0 0 10px 0; }
 #form .message {width:100%; height:200px; margin-bottom:10px;}
@@ -166,7 +166,7 @@ select {cursor:pointer;}
 #contact .feedback{ display:none; width:665px; color:var(--green); margin:0 auto;  }
 #contact #form div {text-align:left; margin:25px 0; font-size:13px;  }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
   #contact {margin-top:0;}
 #contact .grandtitre {width:80%; font-size:40px; margin:70px auto 40px auto; }
 #contact #image {width:25%; margin:10% 0 10% 0; }
@@ -191,7 +191,7 @@ select {cursor:pointer;}
 
 /* faq ------------------------------------------------- */
 #faq .derouler {width:900px; margin-left:auto; margin-right:auto;}
-#faq .derouler .top {font-size:17px; padding:15px 20px; font-weight:600;}
+#faq .derouler .top {font-size:17px; padding:15px 20px; font-weight:700;}
 #faq .derouler .contenu {padding:0 20px 15px 20px;}
 
 @media screen and (max-width: 950px) { 
