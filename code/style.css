@@ -22,7 +22,7 @@ select {cursor:pointer;}
 .btn{ background:var(--blue); color:white; border-radius:25px; cursor:pointer;  text-align:center; font-size:16px; display:block; padding: 15px 30px; display:inline-block; font-weight:700; }
 .btn:hover{background:white !important; color:black !important; cursor:pointer !important; }
 .opacite {opacity:0.35;}
-.titre{font-size:35px; margin:80px 0 40px 0; width:100%; text-align:center; font-weight:600; }
+.titre{font-size:35px; margin:80px 0 40px 0; width:100%; text-align:center; font-weight:600;  }
 
 .derouler {background:rgb(40, 40, 42); margin-bottom:10px; border-radius:15px;}
 .derouler .top {display:flex; justify-content: space-between; align-items: center; padding:15px 0;  -webkit-user-select: none; -ms-user-select: none; user-select: none; }
@@ -40,7 +40,7 @@ select {cursor:pointer;}
   }
 
 /* menu ----------------------------------------------------- */
-#menu { z-index:1; width:100%; top:0; left:0; text-align:center; padding:15px 0; font-weight:600; line-height:125%; }
+#menu { z-index:1; width:100%; top:0; left:0; text-align:center; padding:15px 0; font-weight:600; line-height:115%; }
 #menu div {display:inline-block; vertical-align:middle; margin:0 20px; }
 #menu img {display:inline-block; height:25px; vertical-align:middle; margin:0 20px;}
 #menu div:hover{opacity:0.8; cursor:pointer; }
@@ -191,7 +191,7 @@ select {cursor:pointer;}
 
 /* faq ------------------------------------------------- */
 #faq .derouler {width:900px; margin-left:auto; margin-right:auto;}
-#faq .derouler .top {font-size:17px; padding:15px 20px; font-weight:500;}
+#faq .derouler .top {font-size:17px; padding:15px 20px; font-weight:600;}
 #faq .derouler .contenu {padding:0 20px 15px 20px;}
 
 @media screen and (max-width: 950px) { 
