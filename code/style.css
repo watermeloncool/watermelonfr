@@ -85,9 +85,9 @@ select {cursor:pointer;}
 #siteweb ul{ margin:0 40px; padding:0; margin-right:20px; font-weight:500; text-align:left;  }
 #siteweb li{margin:7px 0;}
 #siteweb .cgv {margin:0 20px 20px 20px; font-size:12px; }
-#siteweb .cgv a {border-bottom:solid 1px white;}
+#siteweb .cgv a {border-bottom:solid 2px white;}
 #siteweb .btn {display:block; margin:30px 20px 10px 20px; padding: 15px 0; }
-#siteweb li a {border-bottom:solid 1px white;}
+#siteweb li a {border-bottom:solid 2px white;}
 #siteweb a:hover {opacity:0.8; }
 
 #siteweb .bloc.un {border-color:rgb(255, 210, 215);  }
@@ -168,7 +168,7 @@ select {cursor:pointer;}
 
 @media screen and (max-width: 750px) {
   #contact {margin-top:0;}
-#contact .grandtitre {width:80%; font-size:40px; margin:70px auto 40px auto; }
+#contact .grandtitre {width:85%; font-size:35px; margin:40px auto 50px auto; }
 #contact #image {width:25%; margin:10% 0 10% 0; }
 #form { width:90% !important; }
 #contact .feedback {  width:90%; }
@@ -185,7 +185,7 @@ select {cursor:pointer;}
 
 @media screen and (max-width: 900px) { 
   #texte {width:90%; }
-  #texte .grandtitre {margin-top:60px;}
+  #texte .grandtitre {width:90%; font-size:35px; }
   }
 
 
