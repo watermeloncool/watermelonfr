@@ -13,16 +13,16 @@
 
 /* global ------------------------------------------------- */
 :root{background:black;}
-body,html{ background-color: var(--dark); /*background: linear-gradient(rgb(255, 210, 215) 80px, var(--dark) 250px) ;*/ color:white; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; scroll-behavior: smooth; margin:0; padding:0; font-size:15px; font-weight:400;    }
+body,html{ background-color: var(--dark); /*background: linear-gradient(rgb(255, 210, 215) 80px, var(--dark) 250px) ;*/ color:white; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; scroll-behavior: smooth; margin:0; padding:0; font-size:15px; font-weight:400; line-height:150%;   }
 a{color:white; text-decoration:none; cursor:pointer; }
 a:hover {cursor:pointer !important;}
-/* input, select, textarea { -webkit-appearance: none; -moz-appearance: none; appearance: none; border:0; margin:0; font-family:'Roboto', Helvetica, Arial, sans-serif; padding:10px 15px; box-sizing: border-box; border-radius:10px; background:white; color: var(--dark); font-size:16px; } */
+/* input, select, textarea { -webkit-appearance: none; -moz-appearance: none; appearance: none; border:0; margin:0; padding:10px 15px; box-sizing: border-box; border-radius:10px; background:white; color: var(--dark); font-size:16px; } */
 select {cursor:pointer;}
 ::placeholder {color: grey; }
 .btn{ background:var(--blue); color:white; border-radius:25px; cursor:pointer;  text-align:center; font-size:16px; display:block; padding: 15px 30px; display:inline-block; font-weight:700; }
 .btn:hover{background:white !important; color:black !important; cursor:pointer !important; }
 .opacite {opacity:0.35;}
-.titre{font-size:40px; padding:80px 0 40px 0; width:100%; text-align:center; font-family: "Lora", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif ; }
+.titre{font-size:40px; margin:80px 0 40px 0; width:100%; text-align:center; font-weight:600; }
 
 .derouler {background:rgb(40, 40, 42); margin-bottom:10px; border-radius:15px;}
 .derouler .top {display:flex; justify-content: space-between; align-items: center; padding:15px 0;  -webkit-user-select: none; -ms-user-select: none; user-select: none; }
@@ -36,7 +36,7 @@ select {cursor:pointer;}
 
 @media screen and (max-width: 600px) { 
   body,html{ /* background: linear-gradient(rgb(255, 210, 215) 50px, var(--dark) 200px) ;*/ }
-  .titre {width:80%;  margin-left:auto; margin-right:auto;}
+  .titre {width:85%; font-size:30px; margin:40px auto 30px auto;  }
   }
 
 /* menu ----------------------------------------------------- */
@@ -49,8 +49,9 @@ select {cursor:pointer;}
 #menumobile #logo {height:25px; position:absolute; top:10px; left:20px;}
 #menumobile #open {height:25px; position:absolute; top:10px; right:20px; }
 
-#sousmenumobile {display:none; position:fixed; background:var(--dark); top:0; left:0; z-index:3; text-align:left; width:100%; height:100vh; overflow: hidden; padding:40px 0;}
-#sousmenumobile div {margin:30px 40px; font-size:35px; font-weight:600; color:white; }
+#sousmenumobile {display:none; position:fixed; background:var(--dark); top:0; left:0; z-index:3; text-align:left; width:100%; height:200vh; padding:40px 0; }
+/* #sousmenumobile::-webkit-scrollbar {display: none; } */
+#sousmenumobile div {margin:30px 30px; font-size:30px; font-weight:500;  line-height:125%; color:white; }
 #sousmenumobile #close {position:fixed; top:10px; right:20px; height:25px; }
 
 @media screen and (max-width: 600px) { 
@@ -71,7 +72,7 @@ select {cursor:pointer;}
 
 /* siteweb ------------------------------------------------ */
 #siteweb {width:100%; margin: 0 auto 0 auto; text-align:center; }
-#siteweb .grandtitre { font-size:55px;  width:750px; text-align:center; margin:60px auto 80px auto; line-height:110%; font-family: "Lora";  }
+#siteweb .grandtitre { font-size:55px;  width:750px; text-align:center; margin:60px auto 80px auto; line-height:115%; font-family: "Lora";  }
 
 #siteweb #portofolio {overflow-x: auto; white-space: nowrap; width: 100vw; box-sizing: border-box; padding:0 10px; margin: 0 0 15px 0; scrollbar-width: none; }
 #siteweb #portofolio::-webkit-scrollbar {display: none; }
@@ -79,14 +80,14 @@ select {cursor:pointer;}
 
 #siteweb #image {width:180px; display:inline-block; vertical-align:middle; margin:50px 0; }
 #siteweb .bloc {position:relative; display:inline-block; width:370px; margin:0 15px 30px 15px; border:solid 4px white; vertical-align:top; border-radius:20px; text-align:center;  }
-#siteweb .bloc .soustitre { margin:20px 0 30px 20px; width:200px; text-align:left; font-size:30px; font-family: "Lora" ; line-height:110%; }
+#siteweb .bloc .soustitre { margin:20px 0 30px 20px; width:200px; text-align:left; font-size:30px; font-weight:600; line-height:110%; }
 #siteweb .prix{position:absolute; top:3px; right:0; display:inline-block; margin:20px; text-align:right; font-size:20px; font-weight:600; }
 #siteweb ul{ margin:0 40px; padding:0; margin-right:20px; text-align:left;  }
 #siteweb li{margin:7px 0;}
 #siteweb .cgv {margin:0 20px 20px 20px; font-size:12px; }
-#siteweb .cgv a {border-bottom:solid 2px white;}
+#siteweb .cgv a {border-bottom:solid 1px white;}
 #siteweb .btn {display:block; margin:30px 20px 10px 20px; padding: 15px 0; }
-#siteweb li a {border-bottom:solid 2px white;}
+#siteweb li a {border-bottom:solid 1px white;}
 #siteweb a:hover {opacity:0.8; }
 
 #siteweb .bloc.un {border-color:rgb(255, 210, 215);  }
@@ -115,12 +116,12 @@ select {cursor:pointer;}
 
 @media screen and (max-width: 800px) { 
 #siteweb {margin-top:0;}
-#siteweb .grandtitre {width:80%; font-size:40px;; }
+#siteweb .grandtitre {width:85%; font-size:35px; margin:40px auto 40px auto; }
 #siteweb #portofolio {margin: 30px 0 0 0;}
-#siteweb #portofolio img { height:170px; margin:5px;}
+#siteweb #portofolio img { margin:5px;}
 #siteweb .bloc {width:90%; margin: 0 0 10% 0; }
-#siteweb .bloc .soustitre {font-size:6vw;  width:60%; margin:5% 5% 30px 5%; }
-#siteweb .bloc .prix {font-size:4vw; width:25%; margin:5% 5% 30px 5%; }
+#siteweb .bloc .soustitre {font-size:7vw;  width:55%; margin:5% 5% 30px 5%; }
+#siteweb .bloc .prix {font-size:5vw; width:30%; margin:5% 5% 30px 5%; }
 }
 
 /* portofolio ------------------------------------------------------*/
@@ -154,7 +155,7 @@ select {cursor:pointer;}
 
 
 /* contact -------------------------------------------- */
-#contact input, #contact select, #contact textarea { -webkit-appearance: none; -moz-appearance: none; appearance: none; border:0; margin:0; font-family:'Roboto', Helvetica, Arial, sans-serif; padding:15px 15px; box-sizing: border-box; border-radius:10px; background:white; color: black; font-size:15px;  }
+#contact input, #contact select, #contact textarea { -webkit-appearance: none; -moz-appearance: none; appearance: none; border:0; margin:0; padding:15px 15px; box-sizing: border-box; border-radius:10px; background:white; color: black; font-size:15px;  }
 #contact {width:100%; margin:20px auto -50px auto; text-align:center;  }
 #contact .grandtitre { width:400px; vertical-align:middle; display:inline-block; margin:50px 45px 50px 0; font-size:55px;  text-shadow: rgba(0, 0, 0, 0.65) 0px 4px 14px;  }
 #contact #image {width:180px; display:inline-block; vertical-align:middle; margin:30px 0; }
