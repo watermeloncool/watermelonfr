@@ -195,7 +195,8 @@ select {cursor:pointer;}
 #faq .derouler .contenu {padding:0 20px 15px 20px;}
 
 @media screen and (max-width: 950px) { 
-#faq .derouler {width:90%;}
+#faq .derouler {width:100%; background:transparent; border-bottom:solid var(--grey) 1px; border-radius:0; margin:0; padding:10px 0; }
+
 }
 
 
