@@ -72,7 +72,7 @@ select {cursor:pointer;}
 
 /* siteweb ------------------------------------------------ */
 #siteweb {width:100%; margin: 0 auto 0 auto; text-align:center; }
-#siteweb .grandtitre { font-size:55px;  width:750px; text-align:center; margin:60px auto 80px auto; line-height:115%; font-family: "Lora"; font-weight:600; }
+#siteweb .grandtitre { font-size:55px;  width:750px; text-align:center; margin:60px auto 80px auto; line-height:115%; font-family: "Lora"; font-weight:400; }
 
 #siteweb #portofolio {overflow-x: auto; white-space: nowrap; width: 100vw; box-sizing: border-box; padding:0 10px; margin: 0 0 15px 0; scrollbar-width: none; }
 #siteweb #portofolio::-webkit-scrollbar {display: none; }
@@ -129,7 +129,7 @@ select {cursor:pointer;}
 
 /* dev ------------------------------------------------- */
 #dev {width:100%; text-align:center; }
-#dev .grandtitre { font-size:55px;  width:750px; text-align:center; margin:60px auto 80px auto; line-height:115%; font-family: "Lora"; font-weight:600; }
+#dev .grandtitre { font-size:55px;  width:750px; text-align:center; margin:60px auto 80px auto; line-height:115%; font-family: "Lora"; font-weight:400; }
 
 @media screen and (max-width: 700px) { 
   #dev .grandtitre {width:85%; font-size:35px; margin:40px auto 50px auto; }
@@ -157,7 +157,7 @@ select {cursor:pointer;}
 /* contact -------------------------------------------- */
 #contact input, #contact select, #contact textarea { -webkit-appearance: none; -moz-appearance: none; appearance: none; border:0; margin:0; padding:15px 15px; box-sizing: border-box; border-radius:10px; background:white; color: black; font-size:15px;  }
 #contact {width:100%; margin:20px auto -50px auto; text-align:center;  }
-#contact .grandtitre { font-size:55px;  width:750px; text-align:center; margin:60px auto 40px auto; line-height:115%; font-family: "Lora"; font-weight:600; }
+#contact .grandtitre { font-size:55px;  width:750px; text-align:center; margin:60px auto 40px auto; line-height:115%; font-family: "Lora"; font-weight:400; }
 #contact img {width:90%; margin-top:60px; border-radius:10px;  }
 #contact #form { width:650px; margin-left:auto; margin-right:auto; }
 #form .email {width:100%; margin:0 0 10px 0; }
@@ -177,7 +177,7 @@ select {cursor:pointer;}
 
 /* texte ----------------------------------------------- */
 #texte {width:800px; margin-left:auto; margin-right:auto; text-align:left; }
-#texte .grandtitre {font-size:55px;  width:750px; text-align:left; padding:0; margin:90px 0 70px 0; line-height:115%; font-family: "Lora"; font-weight:600; }
+#texte .grandtitre {font-size:55px;  width:750px; text-align:left; padding:0; margin:90px 0 70px 0; line-height:115%; font-family: "Lora"; font-weight:400; }
 #texte .titre {font-size:30px; text-align:left; padding:0; margin:70px 0 20px 0;  }
 #texte .texte {font-size:16px; text-align:left; padding:0; margin:15px 0;  }
 #texte a {border-bottom:solid 2px white;}
