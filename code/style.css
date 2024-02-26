@@ -205,6 +205,8 @@ select {cursor:pointer;}
 #footer{ background: black ; text-align:center; margin-top:100px; font-weight:600; }
 #footer .bloc{display:inline-block; vertical-align:top; text-align:left; margin:50px 70px; vertical-align:top; text-align:left;}
 #footer a:hover{cursor:pointer; opacity:0.8;}
+#footer .titrefooter {opacity:0.5;}
+#footer .whatsapp {color:rgb(37,211,102); }
 #footer img {width:20px; padding-right:5px; vertical-align:middle;}
 #footer .lang {border:solid 2px var(--grey); border-radius:25px; vertical-align:middle; display:inline-block; }
 #footer .lang img {width:17px; margin:8px 5px 9px 15px; vertical-align:middle; }
