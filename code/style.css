@@ -37,7 +37,7 @@ select {cursor:pointer;}
 
 /* menu ----------------------------------------------------- */
 #menu { z-index:1; width:100%; top:0; left:0; text-align:center; font-weight:600; line-height:115%;  }
-#menu .menu {display:inline-block; vertical-align:middle; padding:15px 20px; cursor:pointer;  vertical-align:middle;}
+#menu .menu {display:inline-block; vertical-align:middle; padding:15px 15px; cursor:pointer;  vertical-align:middle;}
 #menu #logo {display:inline-block; height:25px; vertical-align:middle; margin:0 20px;}
 #menu #globe {width:15px; padding-right:5px; vertical-align:middle;}
 #menu .sousmenu {position:absolute; top:47px; left:0; width:100%; z-index:3; background:var(--dark);  padding:30px 0; font-size:17px; }
@@ -110,7 +110,7 @@ select {cursor:pointer;}
 .page .tarifs .bloc.six .btn {background:rgb(236, 195, 159); color:black; }
 
 @media screen and (max-width: 750px) {
-  .page .intro { padding:100px 10% 100px 10%;  }
+  .page .intro { padding:50px 10% 50px 10%;  }
   .page .section { padding:100px 10% 100px 10%; }
   .page .tarifs .bloc {width:90%; margin: 0 0 10% 0; }
   .page .tarifs .bloc .soustitre {width:55%; margin:5% 5% 30px 5%; }
