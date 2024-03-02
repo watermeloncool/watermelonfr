@@ -114,7 +114,7 @@ select {cursor:pointer;}
 .page .tarifs .bloc.six .btn {background:rgb(236, 195, 159); color:black; }
 
 @media screen and (max-width: 750px) {
-  .page .intro { padding:50px 10% 50px 10%;  }
+  .page .intro { /* padding:50px 10% 50px 10%; */  }
   .page .intro .grandtitre {font-size:40px; } 
   .page .section { padding:50px 10% 50px 10%; }
   .page .section .titre { font-size:30px;  }
