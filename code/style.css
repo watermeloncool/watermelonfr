@@ -116,9 +116,9 @@ select {cursor:pointer;}
 .page .tarifs .bloc.six .btn {background:rgb(236, 195, 159); color:black; }
 
 @media screen and (max-width: 750px) {
-  .page .intro { padding:100px 10% 100px 10%;   }
+  .page .intro { padding:100px 30px 100px 30px;   }
   .page .intro .grandtitre {font-size:40px; width:auto; } 
-  .page .intro .soustitre {width:auto; }
+  .page .intro .soustitre {width:auto; font-size:16px; }
 
   .page .section { padding:50px 20px 50px 20px;  }
   .page .section .titre { width:auto; font-size:30px; }
@@ -189,10 +189,10 @@ select {cursor:pointer;}
 #footer .contact .bloc .titre { width:auto; font-size:28px; }
 
 @media screen and (max-width: 750px) {
-  #footer a { margin: 0 15px; }
+  #footer a { margin: 0 15px; font-size:15px; }
   #footer .contact { padding:50px 20px 50px 20px;  }
   #footer .contact .titre { width:auto;  font-size:30px;}
-  #footer .contact .texte {  text-align:left;  width:auto; font-size:16px; }
+  #footer .contact .texte {  width:auto; font-size:16px; }
   #footer .contact .bloc .titre { font-size:20px; }
 }
 
