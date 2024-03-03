@@ -121,7 +121,7 @@ select {cursor:pointer;}
   .page .intro .soustitre {width:auto; font-size:16px; }
 
   .page .section { padding:50px 20px 50px 20px;  }
-  .page .section .titre { width:auto; font-size:30px; }
+  .page .section .titre { text-align:left; width:auto; font-size:30px; }
   .page .section .texte { text-align:left; width:auto; font-size:16px; }
 
   .page .portofolio { padding:50px 0 50px 0;  }
@@ -198,7 +198,7 @@ select {cursor:pointer;}
   #footer a { margin: 0 15px; font-size:15px; }
   #footer .contact { padding:50px 20px 50px 20px;  }
   #footer .contact .titre { width:auto;  font-size:30px;}
-  #footer .contact .texte {  text-align:left; width:auto; font-size:16px; }
+  #footer .contact .texte {  width:auto; font-size:16px; }
   #footer .contact .bloc .titre { font-size:20px; }
 }
 
