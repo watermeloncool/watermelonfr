@@ -36,8 +36,8 @@ select {cursor:pointer;}
   }
 
 /* menu ----------------------------------------------------- */
-#menu { z-index:1; width:100%; top:0; left:0; text-align:center;   }
-#menu .menu {display:inline-block; vertical-align:middle; padding:15px 20px; cursor:pointer; vertical-align:middle; line-height:100%; }
+#menu { z-index:1; width:100%; top:0; left:0; text-align:center; font-size:15px;  }
+#menu .menu {display:inline-block; vertical-align:middle; padding:15px 20px; cursor:pointer; vertical-align:middle; line-height:100%;  }
 #menu #logo {display:inline-block; height:25px; vertical-align:middle; margin:0 20px;}
 #menu #globe {width:15px; padding-right:5px; vertical-align:middle;}
 #menu .sousmenu {position:absolute; top:47px; left:0; width:100%; z-index:3; background:var(--dark);  padding:30px 0; }
@@ -46,7 +46,7 @@ select {cursor:pointer;}
 #sousmenutrois a {width:80px; text-align:left; display:block; margin: 10px auto;  }
 
 @media screen and (max-width: 600px) {
-  #menu {font-size:15px; } 
+  #menu {  } 
   #menu .menu {padding:15px 15px;}
   #menu .sousmenu {padding-left:30px;}
   #sousmenuun a, #sousmenutrois a {font-size:25px; margin: 10px auto; width:auto; font-weight:700;}
@@ -186,7 +186,7 @@ select {cursor:pointer;}
 
 /* footer ------------------------------------------------ */
 #footer{ width:100%; text-align:center;  }
-#footer a { margin: 0 20px; }
+#footer a { margin: 0 20px; font-size:15px; }
 #footer #copyright { width:100%; margin:20px 0; text-align:center;  font-size:12px;  }
 #footer .contact { padding:100px 0 100px 0; margin:0; text-align:center; margin-bottom:30px; background: white; color:black; line-height:145%;   }
 #footer .contact .titre { width:700px; font-size:40px; line-height:125%; font-weight:800; margin:0 auto 25px auto;  }
@@ -195,7 +195,7 @@ select {cursor:pointer;}
 #footer .contact .bloc .titre { width:auto; font-size:28px; }
 
 @media screen and (max-width: 750px) {
-  #footer a { margin: 0 15px; font-size:15px; }
+  #footer a { margin: 0 15px;  }
   #footer .contact { padding:50px 20px 50px 20px;  }
   #footer .contact .titre { width:auto;  font-size:30px;}
   #footer .contact .texte {  width:auto; font-size:16px; }
