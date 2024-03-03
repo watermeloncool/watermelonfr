@@ -45,10 +45,11 @@ select {cursor:pointer;}
 #sousmenuun a {width:180px; text-align:left; display:block; margin: 10px auto;  }
 #sousmenutrois a {width:80px; text-align:left; display:block; margin: 10px auto;  }
 
-@media screen and (max-width: 600px) { 
+@media screen and (max-width: 600px) {
+  #menu {font-size:15px; } 
   #menu .menu {padding:15px 15px;}
   #menu .sousmenu {padding-left:30px;}
-  #sousmenuun a, #sousmenutrois a {font-size:30px; margin: 10px auto; width:auto; font-weight:700;}
+  #sousmenuun a, #sousmenutrois a {font-size:25px; margin: 10px auto; width:auto; font-weight:700;}
   }
 
 
@@ -121,7 +122,7 @@ select {cursor:pointer;}
 
   .page .section { padding:50px 20px 50px 20px;  }
   .page .section .titre { width:auto; font-size:30px; }
-  .page .section .texte {  text-align:left;  width:auto; font-size:16px; }
+  .page .section .texte {   width:auto; font-size:16px; }
 
   .page .portofolio { padding:50px 0 50px 0;  }
 .page .portofolio .titre { font-size:30px; }
@@ -203,7 +204,7 @@ select {cursor:pointer;}
 #texte {width:800px; margin-left:auto; margin-right:auto; text-align:left; }
 #texte .grandtitre {font-size:55px;  width:750px; text-align:left; padding:0; margin:60px 0 0 0; line-height:115%; font-weight:700; }
 #texte .titre {font-size:30px; text-align:left; padding:0; margin:50px 0 20px 0;  }
-#texte .texte {text-align:left; padding:0; margin:15px 0;  }
+#texte .texte {padding:0; margin:15px 0;  }
 #texte a {border-bottom:solid 2px white;}
 #texte a:hover {border-bottom:solid 2px transparent; cursor:pointer;}
 
