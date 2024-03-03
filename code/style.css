@@ -137,25 +137,25 @@ select {cursor:pointer;}
 
 /* accueil ---------------------------------------------------- */
 #accueil.intro {
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('../img/accueil/intro.jpg') no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('/img/accueil/intro.webp') no-repeat center center;
   background-size: cover; 
 }
 
 /* app ---------------------------------------------------- */
 #app.intro {
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('../img/app/intro.jpg') no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('/img/app/intro.webp') no-repeat center center;
   background-size: cover; 
 }
 
 /* automatisation ---------------------------------------------------- */
 #automatisation.intro {
-  background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('/img/automatisation/intro.jpg') no-repeat center center;
+  background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('/img/automatisation/intro.webp') no-repeat center center;
   background-size: cover; 
 }
 
 /* siteweb ---------------------------------------------------- */
 #siteweb.intro {
-  background: linear-gradient(rgba(0, 0, 0, 0),  rgba(0, 0, 0, 0.5)), url('../img/siteweb/intro.jpg') no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0),  rgba(0, 0, 0, 0.5)), url('../img/siteweb/intro.webp') no-repeat center center;
   background-size: cover; 
 }
 
