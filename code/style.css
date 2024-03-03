@@ -153,9 +153,15 @@ select {cursor:pointer;}
   background-size: cover; 
 }
 
+/* leads ---------------------------------------------------- */
+#leads.intro {
+  background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('../img/leads/intro.jpg') no-repeat center center;
+  background-size: cover; 
+}
+
 /* siteweb ---------------------------------------------------- */
 #siteweb.intro {
-  background: linear-gradient(rgba(0, 0, 0, 0),  rgba(0, 0, 0, 0.5)), url('../img/siteweb/intro.webp') no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0),  rgba(0, 0, 0, 0.5)), url('/img/siteweb/intro.webp') no-repeat center center;
   background-size: cover; 
 }
 
