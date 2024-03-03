@@ -41,11 +41,15 @@ Suisse
 
 
 <div id="sousmenutrois" class="sousmenu">
-<a href="https://watermelon.cool">Global</a>
 <a href="https://watermelon.fr">France</a>
+<a href="https://watermelon.ch">Suisse</a>
+
+<!--
+<a href="https://watermelon.cool">Global</a>
 <a href="https://watermelon.cool/ru">Россия</a>
 <a href="https://watermelon.ch/de">Schweiz</a>
-<a href="https://watermelon.ch">Suisse</a>
+-->
+
 </div>
 
 `;
