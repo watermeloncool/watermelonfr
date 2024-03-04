@@ -28,14 +28,10 @@ Suisse
 
 <a href="app.html">Apps & Logiciels</a>
 <a href="automatisation.html">Automatisation</a>
+<!--a href="branding.html">Branding</a-->
+<!--a href="leads.html">Génération de leads</a-->
+<!--a href="marketing.html">Marketing digital</a-->
 <a href="siteweb.html">Sites web & E-commerce</a>
-<!--a href="leads.html">Leads</a-->
-
-<!--
-<a href="leads.html">Leads</a>
-<a href="marketing.html">Marketing digital</a>
-<a href="branding.html">Branding</a>
--->
 
 </div>
 

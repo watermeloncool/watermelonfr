@@ -36,13 +36,13 @@ select {cursor:pointer;}
   }
 
 /* menu ----------------------------------------------------- */
-#menu { z-index:1; width:100%; top:0; left:0; text-align:center; font-size:15px;  }
-#menu .menu {display:inline-block; vertical-align:middle; padding:15px 20px; cursor:pointer; vertical-align:middle; line-height:100%;  }
+#menu { z-index:1; width:100%; top:0; left:0; text-align:center;  }
+#menu .menu {display:inline-block; vertical-align:middle; padding:15px 20px; cursor:pointer; vertical-align:middle; font-size:15px; line-height:100%;  }
 #menu #logo {display:inline-block; height:25px; vertical-align:middle; margin:0 20px;}
 #menu #globe {width:15px; padding-right:5px; vertical-align:middle;}
 #menu .sousmenu {position:absolute; top:47px; left:0; width:100%; z-index:3; background:var(--dark);  padding:30px 0; }
 
-#sousmenuun a {width:180px; text-align:left; display:block; margin: 10px auto;  }
+#sousmenuun a {width:200px; text-align:left; display:block; margin: 10px auto;  }
 #sousmenutrois a {width:80px; text-align:left; display:block; margin: 10px auto;  }
 
 @media screen and (max-width: 600px) {
@@ -57,7 +57,7 @@ select {cursor:pointer;}
 .page .intro {padding:200px 0 200px 0; margin:0; text-align:center;  }
 .page .intro .grandtitre {width:700px; font-size:55px; font-weight:700; margin:0 auto 30px auto;  } 
 .page .intro .soustitre {width:700px; font-size:20px; line-height:140%; opacity:0.8; margin:0 auto 30px auto;   }
-.page .btn {background:var(--blue); display:inline-block; border-radius:25px; padding:10px 22px 11px 22px; margin:10px; line-height:100%;}
+.page .btn {background:var(--blue); display:inline-block; border-radius:25px; padding:10px 22px 11px 22px; margin:10px; line-height:100%; font-size:15px; }
 .page .btn.blanc {background:transparent; border:solid 2px white; padding:9px 21px 10px 21px;  }
 
 .page .section { padding:100px 0 100px 0; margin:0; text-align:center;   }
@@ -87,7 +87,7 @@ select {cursor:pointer;}
 .page .tarifs li{margin:7px 0;}
 .page .tarifs .cgv {margin:0 20px 20px 20px; font-size:12px; }
 .page .tarifs .cgv a {border-bottom:solid 2px white;}
-.page .tarifs .btn {display:block; margin:30px 20px 10px 20px; padding: 15px 0; font-weight:700; }
+.page .tarifs .btn {display:block; margin:30px 20px 10px 20px; padding: 15px 0; font-size:15px; font-weight:700; }
 .page .tarifs li a {border-bottom:solid 2px white;}
 .page .tarifs a:hover {opacity:0.8; }
 
@@ -170,7 +170,7 @@ select {cursor:pointer;}
 #faq {padding:100px 0;  }
 #faq .titre {text-align:center; padding:0; margin:0; margin-bottom:30px; font-size:40px; line-height:125%; font-weight:700;}
 #faq .derouler {width:900px; border-bottom:solid rgb(50,50,50) 1px; margin-left:auto; margin-right:auto;}
-#faq .derouler .top {padding:15px 0; font-size:20px; line-height:140%;}
+#faq .derouler .top {padding:15px 0; font-size:20px; font-weight:700; line-height:140%;}
 #faq .derouler .contenu {padding:0 0 15px 0; line-height:155%; }
 
 @media screen and (max-width: 950px) { 
