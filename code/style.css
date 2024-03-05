@@ -39,7 +39,7 @@ select {cursor:pointer;}
 #menu { z-index:1; width:100%; top:0; left:0; text-align:center;  }
 #menu .menu {display:inline-block; vertical-align:middle; padding:15px 20px; cursor:pointer; vertical-align:middle; font-size:15px; line-height:100%;  }
 #menu #logo {display:inline-block; height:25px; vertical-align:middle; margin:0 20px;}
-#menu #globe {width:15px; padding-right:5px; vertical-align:middle;}
+#menu #globe {width:15px; padding-right:5px; padding-bottom:2px; vertical-align:middle;}
 #menu .sousmenu {position:absolute; top:47px; left:0; width:100%; z-index:3; background:var(--dark);  padding:30px 0; }
 
 #sousmenuun a {width:200px; text-align:left; display:block; margin: 10px auto;  }
