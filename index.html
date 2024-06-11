@@ -4,164 +4,211 @@
 
 <!-- META -->
 <meta charset="utf-8">
-<title>Watermelon - Accueil</title>
+<title>Watermelon</title>
 <meta name="robots" content="index,follow">
 <meta name="description" id="description" property="description" content="Watermelon transforme votre vision en réalité avec des solutions numériques innovantes. Spécialisés dans le développement d'applications et logiciels, l'automatisation par IA, le branding, la création d'e-commerce, la génération de leads et le marketing digital, nous propulsons votre entreprise vers le succès. Découvrez comment nos services sur mesure en Suisse peuvent offrir une expérience utilisateur exceptionnelle et un avantage concurrentiel décisif. Transformez votre entreprise avec Watermelon.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-<!-- OPEN GRAPH -->
-<meta property="og:image" content="" />
-<meta property="og:title" content="Watermelon - Accueil" />
-<meta property="og:description" content="Watermelon transforme votre vision en réalité avec des solutions numériques innovantes. Spécialisés dans le développement d'applications et logiciels, l'automatisation par IA, le branding, la création d'e-commerce, la génération de leads et le marketing digital, nous propulsons votre entreprise vers le succès. Découvrez comment nos services sur mesure en Suisse peuvent offrir une expérience utilisateur exceptionnelle et un avantage concurrentiel décisif. Transformez votre entreprise avec Watermelon." />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-<!-- AUTRES -->
-<link rel="stylesheet" href="/code/style.css">
+
+<style>
+
+/*
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%; 
+  height: 100vh;
+}
+
+.carousel-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: none;
+}
+
+.carousel-item.active {
+  display: block;
+}
+
+.carousel-prev, .carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+}
+
+.carousel-prev {
+  left: 10px;
+}
+
+.carousel-next {
+  right: 10px;
+}
+*/
+
+body,html{ background-color:black ; color:white; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; scroll-behavior: smooth; margin:0; padding:0; font-size:16px; font-weight:500;  }
+a {color:white;}
+
+.logo { position:absolute;  z-index:1 ; left: 50%; transform: translateX(-50%) ; top:20px; font-size:18px; font-weight:700; }
+.logo img {width:30px; vertical-align:middle; margin-right:10px; }
+
+/* page dev ------------------------------------------------------------------------ */
+#dev {width: 100%;height: 100vh;background-image: url("img/dev.jpg"); background-position: center; background-repeat: no-repeat; background-size: cover; text-align:center;  }
+#dev .filtre {position:absolute; width:100%; height:100vh; background:rgba(0,0,0,0.5); }
+#dev .contenu {position:absolute; width:100%; top: 50%; transform: translateY(-50%) ;  }
+#dev .titre {width:700px; padding-left: calc(50% - 350px); font-size:60px; font-weight:700; line-height:115%; }
+#dev .soustitre {width:700px; font-size:20px; opacity:0.75; padding:30px calc(50% - 350px); line-height:150%; font-weight:400; }
+#dev .btn {display:inline-block; border:solid 2px rgba(255,255,255,0.2); padding:15px 25px; border-radius:25px; }
+
+@media screen and (max-width: 800px) {
+  #dev .titre {width:90%; margin:0 5%; }
+  #dev .soustitre {width:90%; padding:30px 5%;  }
+}
+
+/* page contact ------------------------------------------------------------------- */
+#contact {position:relative; width:100%; background:white; color:black; text-align:center; padding:100px 0 230px 0; }
+#contact .titre {font-size:60px; font-weight:800; line-height:115%; padding-bottom:50px; }
+#contact .table {position:absolute; text-align:left; left: 50%; transform: translateX(-50%) ; }
+#contact .material-symbols-outlined {background:black; color:white; margin-right:20px; border-radius:30px; padding:10px; font-size:25px; font-variation-settings:'FILL' 1,'wght' 600,'GRAD' 0,'opsz' 24; vertical-align:middle; }
+#contact .text {font-size:25px; font-weight:700; vertical-align:middle; }
+
+@media screen and (max-width: 800px) {
+  #contact .titre {width:90%; margin:0 5%; }
+}
+
+
+</style>
 
 </head>
 <body>
 
+  <div class="logo">
+    <img src="img/watermelon.svg">
+    Watermelon
+  </div>
 
-<!--  menu --------------------------------------------------------------------------- -->
-<div id="menu"></div>
+
+  <div id="dev">
+    <div class="filtre"></div>
+    <div class="contenu">
+    
+    <div class="titre">Bonjour ! Nous sommes une équipe de développeurs innovants</div>
+    <div class="soustitre">Nous avons une solide expérience dans le développement d'apps, sites web, logiciels, solutions d'automatisations et intelligence artificielle.</div>
+    <a href="#contact"><div class="btn">Discutons de votre projet</div></a>
+    
+    </div>
+    </div>
+
+
+    <div id="contact">
       
+      <div class="titre">Discutons de votre projet</div>
 
-<!--  page --------------------------------------------------------------------------- -->
-<div class="page">
+      <div class="table">
+      <span class="material-symbols-outlined">mail</span><span class="text">klim@watermelon.cool</span>
+      <br> <br>
+      <span class="material-symbols-outlined">call</span><span class="text">+41 79 291 87 21</span>
+    </div>
 
-<div id="accueil" class="intro">
+      </div>
 
-<div class="grandtitre">Réinventez les possibilités de votre entreprise</div>
-<div class="soustitre">Transformez votre entreprise avec nos solutions digitales personnalisées.</div>
-<a href="#url" class="btn">En savoir plus</a>
-<a href="#footer" class="btn blanc">Contact commercial</a>
 
+<!--div class="carousel">
+
+<div class="carousel-item dev">
+<div class="filtre"></div>
+<div class="contenu">
+
+<div class="titre">Bonjour ! Nous sommes une équipe de développeurs innovants</div>
+<div class="soustitre">Nous avons une solide expérience dans le développement d'apps, sites web, logiciels, solutions d'automatisations et intelligence artificielle.</div>
+<div class="btn">Contactez-vous</div>
+
+</div>
+</div>
+
+<div class="carousel-item contact" style="background:black;">
+  <div class="contenu">
+Slide 2
+</div>
 </div>
 
 
 
+<img class="logo" src="img/watermelon.svg">
 
-<div id="url" class="section blanc">
-
-<div class="titre">
-Développement d'apps & logiciels
-</div>
-
-<div class="texte">
-  Watermelon propulse l'avenir numérique avec le développement d'applications intelligentes personnalisées. Utilisant l'intelligence artificielle, nous révolutionnons l'expérience utilisateur, l'automatisation et la prise de décision dans tous les secteurs. Notre expertise s'étend sur les plateformes web, iOS, Android, et Windows, avec une technologie de pointe allant de React à Swift et TensorFlow. Transformez votre vision en réalité avec des solutions innovantes et restez en tête de l'innovation.
-</div>
-
-<a href="app.html" class="btn">En savoir plus</a>
-
-</div>
-
-
-<div class="section gris">
-
-<div class="titre">
-Solutions d'automatisations personnalisées
-</div>
-
-<div class="texte">
-  Chez Watermelon, nous transformons votre entreprise avec nos solutions d'automatisation intelligentes, intégrant l'IA pour booster l'efficacité, la flexibilité, et l'innovation. Nos technologies avancées, comme l'apprentissage profond et le traitement du langage naturel, optimisent les opérations et améliorent l'expérience client. Simplifiez vos tâches répétitives et préparez votre entreprise pour l'avenir avec Watermelon.
-</div>
-
-<a href="automatisation.html" class="btn">En savoir plus</a>
-
-</div>
-
-
-
-<!--div class="section noir">
-
-<div class="titre">
-Branding
-</div>
-
-<div class="texte">
-Nous mettons notre expertise en branding à votre service pour créer une identité de marque solide et reconnaissable. Notre processus commence par une compréhension approfondie de votre marché et de vos objectifs. Nous utilisons cette base pour développer des éléments visuels clés, tels que logos, palettes de couleurs et typographies, qui parlent directement à votre public cible. Nous nous concentrons également sur la cohérence à travers tous les points de contact, garantissant que chaque interaction avec votre marque renforce votre message et vos valeurs. Notre objectif est de vous fournir les outils nécessaires pour communiquer efficacement l'essence de votre entreprise, assurant ainsi une présence marquante et durable sur votre marché.
-</div>
-
-<a href="branding.html" class="btn">En savoir plus</a>
-
-</div>
-
-
-
-
-<div class="section gris">
-
-<div class="titre">
-Création d'e-commerce
-</div>
-
-<div class="texte">
-  Nous propulsons votre entreprise vers le succès en ligne grâce à des boutiques personnalisées, intégrant des systèmes de gestion de contenu (CMS) à la pointe de la technologie comme WordPress, Shopify, et Magento. Notre expertise couvre une gamme complète de fonctionnalités innovantes : optimisation SEO pour une visibilité maximale, solutions de paiement sécurisées pour faciliter les transactions, et interfaces utilisateur intuitives pour améliorer l'expérience client. Nous mettons en œuvre des outils d'analyse avancés pour suivre les performances de votre site en temps réel, vous permettant d'ajuster rapidement votre stratégie pour maximiser les ventes. En choisissant Watermelon, vous bénéficiez d'un service clé en main, depuis la conception jusqu'au lancement de votre boutique en ligne, assurant une transition fluide vers le digital tout en plaçant l'innovation au cœur de votre stratégie commerciale.  
-</div>
-
-<a href="ecommerce.html" class="btn">En savoir plus</a>
-
-</div>
-
-
-
-<div class="section blanc">
-
-<div class="titre">
-Génération de leads
-</div>
-
-<div class="texte">
-  Nous nous spécialisons dans la fourniture de leads de haute qualité, prêts à l'emploi pour votre entreprise. Imaginez avoir accès à une source constante de clients potentiels, déjà intéressés par vos offres et demandant activement des devis. Notre approche unique garantit que chaque lead que vous recevez est non seulement frais et pertinent, mais également que vous ne serez en compétition qu'avec un maximum de quatre autres fournisseurs. Cela augmente significativement vos chances de conversion, tout en vous assurant une avance sur le marché. Découvrez comment nous pouvons transformer votre processus d'acquisition de clients et propulser votre entreprise vers de nouveaux sommets.
-</div>
-
-<a href="leads.html" class="btn">En savoir plus</a>
-
-</div>
-
-
-
-<div class="section gris">
-
-<div class="titre">
-Marketing digital
-</div>
-
-<div class="texte">
-  Valorisez votre marque avec Watermelon, où nous investissons intelligemment dans des stratégies de marketing digital sur-mesure. Notre approche est axée sur le déploiement de campagnes publicitaires précises sur les réseaux sociaux, visant à engager votre public avec authenticité et pertinence. Nous optimisons votre visibilité en ligne grâce au référencement naturel, assurant ainsi que votre entreprise se distingue dans les résultats de recherche. En outre, nous perfectionnons la communication avec votre audience à travers des campagnes d'emailing personnalisées, enrichissant la relation client. Avec une structure de commission de 10 à 20%, Watermelon garantit une allocation efficace de votre budget, transformant votre investissement en résultats mesurables et en succès durable pour votre marque.
-</div>
-
-<a href="marketing.html" class="btn">En savoir plus</a>
+<button class="carousel-prev">Previous</button>
+<button class="carousel-next">Next</button>
 
 </div-->
 
 
 
-<div class="section noir">
-
-<div class="titre">
-Création de sites web
-</div>
-
-<div class="texte">
-Nous proposons des solutions web et e-commerce personnalisées pour améliorer votre présence en ligne, incluant design responsive, développement sur mesure, SEO, e-commerce, hébergement, et maintenance. Nous offrons aussi des stratégies de marketing digital, une analyse de performance, et des mesures de sécurité pour protéger vos données. Notre but est de faciliter votre transition numérique avec une expertise et un support exceptionnels. Nous utilisons des CMS et frameworks avancés tels que WordPress, Shopify, Magento, React, Vue.js, et Angular, tout en explorant des technologies émergentes pour rester à la pointe de l'innovation et répondre aux besoins spécifiques de nos clients.
-</div>
-
-<a href="siteweb.html" class="btn">En savoir plus</a>
-
-</div>
+<script>
 
 
+/*
+const carousel = document.querySelector('.carousel');
+const items = document.querySelectorAll('.carousel-item');
+const prevButton = document.querySelector('.carousel-prev');
+const nextButton = document.querySelector('.carousel-next');
+
+let activeIndex = 0;
+
+items[activeIndex].classList.add('active');
+
+function next() {
+  items[activeIndex].classList.remove('active');
+  activeIndex = (activeIndex + 1) % items.length;
+  items[activeIndex].classList.add('active');
+}
+
+function prev() {
+  items[activeIndex].classList.remove('active');
+  activeIndex = (activeIndex - 1 + items.length) % items.length;
+  items[activeIndex].classList.add('active');
+}
+
+prevButton.addEventListener('click', prev);
+nextButton.addEventListener('click', next);
+*/
 
 
 
-</div>
 
 
- <!--  footer --------------------------------------------------------------------------- -->
- <div id="footer"></div>
+/* titre -------------------------------------------------------------- */
+// Sélection de l'élément 'titre' qui est à l'intérieur des classes 'intro' et 'page'
+const titre = document.querySelector('#dev .titre');
+// Prendre le texte directement de l'élément HTML
+const texte = titre.innerHTML;
+// Nettoyer le contenu initial de l'élément pour préparer l'affichage lettre par lettre
+titre.innerHTML = '';
+// La vitesse à laquelle les lettres sont ajoutées (en millisecondes)
+const vitesse = 100; // 100 ms entre chaque lettre
+let i = 0; // Index pour suivre la position dans la chaîne de caractères
 
- 
-<script src="/code/code.js"></script>
+function afficherLettreParLettre() {
+  if (i < texte.length) {
+    // Ajouter la lettre actuelle à l'élément 'titre'
+    titre.innerHTML += texte.charAt(i);
+    i++; // Passer à la lettre suivante
+  } else {
+    // Arrêter le setInterval une fois tout le texte affiché
+    clearInterval(interval);
+  }
+}
+
+// Démarrer l'intervalle pour exécuter la fonction afficherLettreParLettre
+const interval = setInterval(afficherLettreParLettre, vitesse);
+
+
+</script>
 
 </body>
 </html>
