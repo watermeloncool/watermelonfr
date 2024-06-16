@@ -122,18 +122,8 @@ const interval = setInterval(afficherLettreParLettre, vitesse);
 
 // articles -------------------------------------------------------------------------------------------------------------
 fetch('articles/1.html')
-  .then(response => response.text())
-  .then(htmlContent => {
-    // Traitement du contenu HTML ici
-  });
-
-
-
-  fetch('/articles/1.html')
-  .then(response => response.text())
-  .then(htmlContent => {
-    // Traitement du contenu HTML ici
-  });
+.then(response => response.text())
+.then(html => console.log(html));
 
 
 
