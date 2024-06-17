@@ -126,9 +126,6 @@ a {color:white;}
 </div>
 </div-->
 
-
-<div id="compression"></div>
-
 <!-- --------------------------------------------------------------------------- -->
     <div id="contact">
       
@@ -177,38 +174,6 @@ function afficherLettreParLettre() {
 const interval = setInterval(afficherLettreParLettre, vitesse);
 
 // articles -------------------------------------------------------------------------------------------------------------
-// Récupérez l'image à compresser
-const img = new Image();
-img.src = 'img/dev3.jpg';
-
-// Attendez que l'image soit chargée
-img.onload = () => {
-  // Créez un canvas pour compresser l'image
-  const canvas = document.createElement('canvas');
-  canvas.width = 300; // Définissez la largeur du canvas à 300px
-  canvas.height = (300 / img.width) * img.height; // Calculez la hauteur en fonction de la largeur et de la taille d'origine de l'image
-
-  const ctx = canvas.getContext('2d');
-  ctx.drawImage(img, 0, 0, canvas.width, canvas.height); // Dessinez l'image avec les nouvelles dimensions
-
-  // Compresser l'image dans un blob
-  canvas.toBlob((blob) => {
-    // Récupérez l'élément HTML qui a l'ID "compression"
-    const compressionElement = document.getElementById('compression');
-
-    // Créez un objet URL pour le blob
-    const url = URL.createObjectURL(blob);
-
-    // Ajoutez le blob à l'élément HTML en tant que contenu
-    const anchor = document.createElement('a');
-    anchor.href = url;
-    anchor.download = 'compressed_image.jpg'; // nom du fichier téléchargé
-    compressionElement.appendChild(anchor);
-  }, 'image/jpeg', 0.8); // qualité de compression (ici, 80%)
-};
-
-
-
 
 /*
 fetch('articles/1.html')
