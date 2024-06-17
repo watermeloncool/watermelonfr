@@ -36,6 +36,13 @@ a {color:white;}
 }
 
 /* page articles ------------------------------------------------------------------- */
+#articles {width:100%; background:rgb(30,30,30); color:white; text-align:center; padding:100px 0 100px 0; }
+#articles .box {width:1200px; margin:0 auto;}
+#articles .titre {font-size:60px; font-weight:800; line-height:115%; padding-bottom:30px; }
+#articles .article {display:inline-block; width:300px; height:250px; margin:10px 7px; padding:20px; text-align:left; /* border:solid 2px rgba(255,255,255,0.2);*/ background:rgba(255,255,255,0.1); border-radius:20px; font-size:16px; line-height:150%; }
+#articles .article .date {margin-bottom:10px; opacity:0.5; }
+#articles .article .titre {font-size:20px; padding:0; margin:0; margin-bottom:10px; }
+#articles .article .texte {opacity:0.8;}
 
 /* page contact ------------------------------------------------------------------- */
 #contact {width:100%; background:white; color:black; text-align:center; padding:100px 0 100px 0; }
@@ -61,7 +68,7 @@ a {color:white;}
     Watermelon
   </div>
 
-
+<!-- --------------------------------------------------------------------------- -->
   <div id="dev">
     <div class="filtre"></div>
     <div class="contenu">
@@ -73,7 +80,54 @@ a {color:white;}
     </div>
     </div>
 
+<!-- --------------------------------------------------------------------------- -->
+<!--div id="articles">
+<div class="box">
 
+<div class="article">
+<div class="date">15.06.24</div>
+<div class="titre">Llama chez soi ! Llama c’est quoi ?</div>
+<div class="texte">Llama est une intelligence artificielle développée en open source par Meta (Facebook). Cela signifie que c’est totalement gratuit et que l’on peut l’installer en local. Actuellement, la version la plus puissante de Llama</div>
+</div>
+
+<div class="article">
+<div class="date">15.06.24</div>
+<div class="titre">Llama chez soi ! Llama c’est quoi ?</div>
+<div class="texte">Llama est une intelligence artificielle développée en open source par Meta (Facebook). Cela signifie que c’est totalement gratuit et que l’on peut l’installer en local. Actuellement, la version la plus puissante de Llama</div>
+</div>
+
+<div class="article">
+<div class="date">15.06.24</div>
+<div class="titre">Llama chez soi ! Llama c’est quoi ?</div>
+<div class="texte">Llama est une intelligence artificielle développée en open source par Meta (Facebook). Cela signifie que c’est totalement gratuit et que l’on peut l’installer en local. Actuellement, la version la plus puissante de Llama</div>
+</div>
+
+<div class="article">
+<div class="date">15.06.24</div>
+<div class="titre">Llama chez soi ! Llama c’est quoi ?</div>
+<div class="texte">Llama est une intelligence artificielle développée en open source par Meta (Facebook). Cela signifie que c’est totalement gratuit et que l’on peut l’installer en local. Actuellement, la version la plus puissante de Llama</div>
+</div>
+
+<div class="article">
+<div class="date">15.06.24</div>
+<div class="titre">Llama chez soi ! Llama c’est quoi ?</div>
+<div class="texte">Llama est une intelligence artificielle développée en open source par Meta (Facebook). Cela signifie que c’est totalement gratuit et que l’on peut l’installer en local. Actuellement, la version la plus puissante de Llama</div>
+</div>
+
+<div class="article">
+<div class="date">15.06.24</div>
+<div class="titre">Llama chez soi ! Llama c’est quoi ?</div>
+<div class="texte">Llama est une intelligence artificielle développée en open source par Meta (Facebook). Cela signifie que c’est totalement gratuit et que l’on peut l’installer en local. Actuellement, la version la plus puissante de Llama</div>
+</div>
+
+
+</div>
+</div-->
+
+
+<div id="compression"></div>
+
+<!-- --------------------------------------------------------------------------- -->
     <div id="contact">
       
       <div class="titre">Discutons de votre projet</div>
@@ -121,9 +175,41 @@ function afficherLettreParLettre() {
 const interval = setInterval(afficherLettreParLettre, vitesse);
 
 // articles -------------------------------------------------------------------------------------------------------------
+// Récupérez l'image à compresser
+const img = new Image();
+img.src = 'https://watermelon.cool/img/dev3.jpg';
+
+// Attendez que l'image soit chargée
+img.onload = () => {
+  // Créez un canvas pour compresser l'image
+  const canvas = document.createElement('canvas');
+  canvas.width = 300; // Définissez la largeur du canvas à 300px
+  canvas.height = (300 / img.width) * img.height; // Calculez la hauteur en fonction de la largeur et de la taille d'origine de l'image
+
+  const ctx = canvas.getContext('2d');
+  ctx.drawImage(img, 0, 0, canvas.width, canvas.height); // Dessinez l'image avec les nouvelles dimensions
+
+  // Compresser l'image dans un blob
+  canvas.toBlob((blob) => {
+    // Récupérez l'élément HTML qui a l'ID "compression"
+    const compressionElement = document.getElementById('compression');
+
+    // Créez un objet URL pour le blob
+    const url = URL.createObjectURL(blob);
+
+    // Ajoutez le blob à l'élément HTML en tant que contenu
+    compressionElement.href = url;
+  }, 'image/jpeg');
+};
+
+
+
+/*
 fetch('articles/1.html')
 .then(response => response.text())
-.then(html => console.log(html));
+.then(html => console.log(html))
+.catch(error => console.error(`Erreur : ${error.message}`));
+*/
 
 
 
