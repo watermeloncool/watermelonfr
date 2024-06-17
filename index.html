@@ -200,9 +200,13 @@ img.onload = () => {
     const url = URL.createObjectURL(blob);
 
     // Ajoutez le blob à l'élément HTML en tant que contenu
-    compressionElement.href = url;
-  }, 'image/jpeg');
+    const anchor = document.createElement('a');
+    anchor.href = url;
+    anchor.download = 'compressed_image.jpg'; // nom du fichier téléchargé
+    compressionElement.appendChild(anchor);
+  }, 'image/jpeg', 0.8); // qualité de compression (ici, 80%)
 };
+
 
 
 
