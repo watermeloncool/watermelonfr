@@ -3,7 +3,8 @@ body,html{ color:black; font-family: -apple-system, BlinkMacSystemFont, "Segoe U
 #date {width:690px; margin:20px auto 30px auto; opacity:0.5; font-weight:400;}
 p {width:690px; font-weight:400; margin:15px auto; line-height:150%; opacity:0.9; }
 a {text-decoration:underline; color:black;}
+ul {width:690px;}
 
 @media screen and (max-width: 750px) {
-    #titre,#date,p,a {width:90%;}
+    #titre,#date,p,a,ul {width:90%;}
   }
