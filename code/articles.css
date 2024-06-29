@@ -1,7 +1,8 @@
 body,html{ color:black; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; scroll-behavior: smooth; margin:0; padding:0; font-size:16px; font-weight:400; line-height:150%;  }
-.article {width:690px; margin:0 auto;}
-#titre {line-height:115%; margin-top:50px;}
+.article {width:690px; margin:0 50px;}
+#titre {line-height:115%;}
 #date {margin-top:20px; margin-bottom:30px; opacity:0.5;}
+img {width:100%; margin:25px 0; border-radius:10px; }
 p {margin-top:15px; margin-bottom:15px; line-height:150%; opacity:0.9; }
 a {text-decoration:underline; color:black;}
 
