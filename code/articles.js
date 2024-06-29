@@ -6,8 +6,5 @@ document.head.insertAdjacentHTML('beforeend', `
 `);
 
 
-// Ajouter <div class="article"> au début du body
-document.body.insertAdjacentHTML('afterbegin', '<div class="article">');
-
-// Ajouter </div> à la fin du body
-document.body.insertAdjacentHTML('beforeend', '</div>');
+// Envelopper tout le contenu du body dans une div
+document.body.innerHTML = '<div class="article">' + document.body.innerHTML + '</div>';
