@@ -21,8 +21,11 @@ a {color:white;}
 .logo img {width:30px; vertical-align:middle; margin-right:7px; }
 
 /* page dev ------------------------------------------------------------------------ */
-#dev {width: 100%;height: 100vh;background-image: url("img/dev3.jpg"); background-position: center; background-repeat: no-repeat; background-size: cover; text-align:center;  }
-#dev .filtre {position:absolute; width:100%; height:100vh; background:rgba(0,0,0,0.3); -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); }
+#dev {width: 100%;height: 100vh; text-align:center;
+ background:
+radial-gradient(ellipse at 25% 25%, rgba(11, 0, 159, 0.3) 0% , transparent 50%),
+radial-gradient(ellipse at 75% 75%, rgba(111, 0, 167, 0.3) 0% , black 50%);
+ }
 #dev .contenu {position:absolute; width:100%; top: 50%; transform: translateY(-50%) ;  }
 #dev .titre {width:700px; padding-left: calc(50% - 350px); font-size:60px; font-weight:700; line-height:115%; /* text-shadow: 0 0 5px rgba(0,0,0,0.5); */  }
 #dev .soustitre {width:700px; font-size:20px; opacity:0.85; padding:30px calc(50% - 350px); line-height:150%; font-weight:400; }
@@ -75,7 +78,6 @@ a {color:white;}
 
 <!-- --------------------------------------------------------------------------- -->
   <div id="dev">
-    <div class="filtre"></div>
     <div class="contenu">
     
     <div class="titre">Bonjour ! Nous sommes une équipe de développeurs innovants</div>
