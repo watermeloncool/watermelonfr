@@ -7,4 +7,14 @@ document.head.insertAdjacentHTML('beforeend', `
 
 
 // Envelopper tout le contenu du body dans une div
-document.body.innerHTML = '<div class="article">' + document.body.innerHTML + '</div>';
+document.body.innerHTML = `
+<div id="logo">
+<a href="/index.html">
+<img src="/img/watermelon.svg">
+<span>Watermelon</span>
+</a>
+</div>
+<div class="article">
+` + document.body.innerHTML + `
+</div>
+`;
