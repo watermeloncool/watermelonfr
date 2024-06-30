@@ -2,9 +2,10 @@ body,html{ color:black; font-family: -apple-system, BlinkMacSystemFont, "Segoe U
 .article {width:690px; margin:50px auto;}
 #titre {line-height:115%; font-size:35px; }
 #date {margin-top:15px; margin-bottom:15px; opacity:0.5;}
-img {width:100%; margin:15px 0; border-radius:10px; }
+img {width:100%; margin:15px 0; }
 p {margin-top:15px; margin-bottom:15px; line-height:150%; opacity:0.9; }
 a {text-decoration:underline; color:black;}
+li {margin:5px 0;}
 
 @media screen and (max-width: 750px) {
     .article {width:87%;}
