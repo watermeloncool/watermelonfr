@@ -8,9 +8,9 @@ body,html{ color:black; font-family: -apple-system, BlinkMacSystemFont, "Segoe U
 img {width:100%; margin:15px 0; }
 a {text-decoration:underline; color:black;}
 
-p,.article a,li{ margin-top:25px; margin-bottom:25px; line-height:150%; font-size:19px; font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol; }
+p,.article a,li{ margin-top:30px; margin-bottom:30px; line-height:150%; font-size:19px; font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol; }
 
-li {margin:10px 0;}
+li {margin:15px 0;}
 
 @media screen and (max-width: 750px) {
     .article {width:87%;}
