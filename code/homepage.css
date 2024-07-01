@@ -37,8 +37,8 @@ radial-gradient(ellipse at 75% 75%, rgba(111, 0, 167, 0.3) 0% , black 50%);
 @media screen and (max-width: 700px) {
   #articles {padding:20px 0;}
   #articles .box {width:87%;}
-  #articles .article .gauche {width:60%;}
-  #articles .article .image {width:20%; height:15%; }
+  #articles .article .gauche {width:70%;}
+  #articles .article .image {width:25%; height:18%; }
   #articles .article .titre {font-size:22px; font-weight:900; }
   #articles .article .date {font-size:12px; }
   #articles .article .texte {font-size:16px; }
