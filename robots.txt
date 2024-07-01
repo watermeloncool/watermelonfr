@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /fredbussy/
+Disallow: /whatsapp/
+Disallow: /zes/
+Allow: /
+Sitemap: https://www.watermelon.fr/sitemap.xml

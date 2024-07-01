@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="robots" content="noindex,nofollow">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta property="og:image" content="https://watermelon.cool/whatsapp/img.jpg">
+
+	<style>
+		body,html{width:100%; margin:0; padding:0; font-family:arial,helvetica,sans-serif; font-size:16px; font-weight:bold; background:#191b1c;}
+		#whatsapp{width:100%; position:absolute; text-align:center;top:120px;}
+		#titre{margin-bottom:25px; color:white; font-size:20px;}
+		#btn{margin-left:5px; padding:9px 16px; background:green; color:white; border-radius:10px; display:inline-block; }
+		input[type="tel"]{ line-height: 28px; font-size:16px; width:200px; padding:5px 10px; border-radius:10px; border:1px solid black;  }
+
+	</style>
+</head>
+<body>
+
+	<div id="whatsapp">
+	<div id="titre">WhatsApp</div>
+	<input type="tel" id="input">
+	<div id="btn">Créer</div>
+	<!--button id="btn-redirection">Créer</button-->
+	</div>
+
+	<script>
+
+
+
+let str = "00123"; // exemple de string
+
+
+
+
+		// On récupère l'élément input et le bouton
+		const input = document.getElementById("input");
+		const btn = document.getElementById("btn");
+
+		// On ajoute un écouteur d'événements au bouton
+		btn.addEventListener("click", function() {
+			// On récupère la valeur de l'input
+			var numero = input.value;
+
+			console.log(numero)
+
+			numero = numero.replace(/\s/g, "");
+			numero = numero.replace(/\(0\)/g, "");
+
+			if (numero.startsWith("00")) {numero = numero.replace("00", "");}
+			if (numero.startsWith("00")) {numero = numero.replace("+", "");}
+
+
+			// On redirige vers le lien avec le numéro en paramètre
+			window.location.href = "https://wa.me/" + numero;
+		});
+	</script>
+</body>
+</html>
+
+
