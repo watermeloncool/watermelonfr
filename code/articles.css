@@ -15,5 +15,5 @@ p,a,li{ font-size:19px; font-family: Iowan Old Style, Apple Garamond, Baskervill
 @media screen and (max-width: 750px) {
     .article {width:87%;}
     #titre {font-size:35px; }
-    p {font-size:17px;}
+    p,a,li{font-size:17px;}
   }
