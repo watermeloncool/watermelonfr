@@ -6,11 +6,11 @@ body,html{ color:black; font-family: -apple-system, BlinkMacSystemFont, "Segoe U
 #titre {line-height:115%; font-size:45px; }
 #date {margin-top:5px; margin-bottom:15px; opacity:0.5;}
 img {width:100%; margin:15px 0; }
-p {margin-top:15px; margin-bottom:15px; line-height:150%; opacity:0.9; }
 a {text-decoration:underline; color:black;}
-li {margin:5px 0;}
 
-p,a,li{ font-size:19px; font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol; }
+p,a,li{ margin-top:15px; margin-bottom:15px; line-height:150%; font-size:19px; font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol; }
+
+li {margin:10px 0;}
 
 @media screen and (max-width: 750px) {
     .article {width:87%;}
