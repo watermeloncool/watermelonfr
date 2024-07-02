@@ -47,6 +47,9 @@ radial-gradient(ellipse at 75% 75%, rgba(111, 0, 167, 0.3) 0% , black 50%);
 /* mots --------------------------------------------------------------------------- */
 #mots {background:black; color:white; padding:50px; text-align:center; }
 #mots .mot {display:inline-block; }
+@media screen and (max-width: 700px) { 
+#mots {padding:50px 5%; }
+}
 
 /* page contact ------------------------------------------------------------------- */
 #contact {width:100%; background:rgb(177, 245, 254); color:black; text-align:center; padding:100px 0 100px 0; }
