@@ -67,22 +67,31 @@ const mots = [
 "Llama",
 "Qwen",
 "Gemma",
+"Claude",
 
 "Python",
 "Javascript",
 "HTML",
 "CSS",
+"PHP",
+"SQL",
 
 "macOS",
 "Android",
 "iOS",
 "Kotlin",
 "SwiftUI",
+"Windows",
+"Linux",
+"Ubuntu",
 
 "WordPress",
 "Shopify",
 "Magento",
-"PrestaShop"
+"PrestaShop",
+
+"MongoDB",
+"Google Apps Script"
 
 ];
 
