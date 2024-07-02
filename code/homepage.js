@@ -105,10 +105,15 @@ function shuffle(array) {
 let aleatoire = shuffle(mots);
 
 const epaisseur = ['100', '200', '300', '400', '500', '600', '700', '800', '900'];   
-const taille = ['10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39']; 
+const taille = ['5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39']; 
+const transparence = ['0.1', '0.2', '0.3', '0.4', '0.5', '0.6', '0.7', '0.8', '0.9', '1']; 
+const marge = ['5', '6', '7', '8', '9', '10']; 
+
 
 for (let i = 0; i < aleatoire.length; i++) {
 const epaisseuraleatoire = epaisseur[Math.floor(Math.random() * epaisseur.length)]; 
 const taillealeatoire = taille[Math.floor(Math.random() * taille.length)]; 
-document.getElementById('mots').innerHTML = document.getElementById('mots').innerHTML + '<div class="mot" style="font-weight:'+epaisseuraleatoire+'; font-size:'+taillealeatoire+'px; ">'+aleatoire[i]+'</div>';
+const transparencealeatoire = transparence[Math.floor(Math.random() * transparence.length)]; 
+const margealeatoire = marge[Math.floor(Math.random() * marge.length)];
+document.getElementById('mots').innerHTML = document.getElementById('mots').innerHTML + '<div class="mot" style="font-weight:'+epaisseuraleatoire+'; font-size:'+taillealeatoire+'px; opacity:'+transparencealeatoire+'; margin:"'+margealeatoire+'px"; ">'+aleatoire[i]+'</div>';
 }
