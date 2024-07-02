@@ -30,7 +30,7 @@ radial-gradient(ellipse at 75% 75%, rgba(111, 0, 167, 0.3) 0% , black 50%);
 #articles .titre {font-size:60px; font-weight:800; line-height:115%; padding-bottom:30px; }
 #articles .article { position:relative; padding:40px 0; text-align:left; border-bottom:solid 1px rgba(0,0,0,0.1); cursor:pointer; }
 #articles .article .gauche {width:470px; display:inline-block;}
-#articles .article .image {width:160px; height:107px; background:grey; display:inline-block; position:absolute; top:40px; right:0; border-radius:2px; background-position: center; background-repeat: no-repeat; background-size: cover; }
+#articles .article .image {width:160px; height:107px; background:grey; display:inline-block; position:absolute; top:40px; right:0; border-radius:3px; background-position: center; background-repeat: no-repeat; background-size: cover; }
 #articles .article .titre {font-size:24px; font-weight:800; padding:0; margin:0; line-height:130%; }
 #articles .article .date { opacity:0.5; font-size:14px; font-weight:400; }
 #articles .article .texte {margin:10px 0; opacity:0.7; /* font-size:18px;*/ font-weight:400; line-height:150%; }
@@ -38,10 +38,10 @@ radial-gradient(ellipse at 75% 75%, rgba(111, 0, 167, 0.3) 0% , black 50%);
   #articles {padding:20px 0;}
   #articles .box {width:87%;}
   #articles .article .gauche {width:70%;}
-  #articles .article .image {width:25%; height:18%; }
+  #articles .article .image {width:25%; height:65px; }
   #articles .article .titre {font-size:22px; font-weight:900; }
   #articles .article .date {font-size:12px; }
-  #articles .article .texte {font-size:16px; }
+  #articles .article .texte {font-size:16px; margin:5px 0 10px 0;}
 }
 
 /* page contact ------------------------------------------------------------------- */
