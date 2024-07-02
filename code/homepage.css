@@ -44,6 +44,10 @@ radial-gradient(ellipse at 75% 75%, rgba(111, 0, 167, 0.3) 0% , black 50%);
   #articles .article .texte {font-size:16px; margin:5px 0 20px 0; line-height:125%;}
 }
 
+/* mots --------------------------------------------------------------------------- */
+#mots {background:black; color:white; padding:50px; text-align:center; }
+#mots .mot {margin:10px; display:inline-block; }
+
 /* page contact ------------------------------------------------------------------- */
 #contact {width:100%; background:rgb(177, 245, 254); color:black; text-align:center; padding:100px 0 100px 0; }
 #contact .titre {font-size:60px; font-weight:800; line-height:115%; padding-bottom:50px; }
