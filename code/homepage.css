@@ -39,9 +39,9 @@ radial-gradient(ellipse at 75% 75%, rgba(111, 0, 167, 0.3) 0% , black 50%);
   #articles .box {width:87%;}
   #articles .article .gauche {width:70%;}
   #articles .article .image {width:25%; height:65px; }
-  #articles .article .titre {font-size:22px; font-weight:900; }
+  #articles .article .titre {font-size:22px; font-weight:900; line-height:115%; }
   #articles .article .date {font-size:12px; }
-  #articles .article .texte {font-size:16px; margin:2px 0 15px 0;}
+  #articles .article .texte {font-size:16px; margin:2px 0 20px 0; line-height:130%;}
 }
 
 /* page contact ------------------------------------------------------------------- */
